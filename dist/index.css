@@ -136,7 +136,7 @@
 
 /* styles.css */
 
-/* css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/AutoField/styles.module.css/#css-module-data */
+/* css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/AutoField/styles.module.css/#css-module-data */
 ._Input_3pq3z_1 {
   color: var(--puck-color-grey-04);
   padding: 16px;
@@ -298,7 +298,7 @@ textarea._Input-input_3pq3z_47 {
   margin-bottom: -4px;
 }
 
-/* css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/AutoField/fields/ArrayField/styles.module.css/#css-module-data */
+/* css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/AutoField/fields/ArrayField/styles.module.css/#css-module-data */
 ._ArrayField_1go19_5 {
   display: flex;
   flex-direction: column;
@@ -458,7 +458,7 @@ textarea._Input-input_3pq3z_47 {
   opacity: 1;
 }
 
-/* css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/IconButton/IconButton.module.css/#css-module-data */
+/* css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/IconButton/IconButton.module.css/#css-module-data */
 ._IconButton_swpni_1 {
   align-items: center;
   background: transparent;
@@ -500,7 +500,7 @@ textarea._Input-input_3pq3z_47 {
   color: var(--puck-color-grey-07);
 }
 
-/* css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/Loader/styles.module.css/#css-module-data */
+/* css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/Loader/styles.module.css/#css-module-data */
 @keyframes _loader-animation_nacdm_1 {
   0% {
     transform: rotate(0deg) scale(1);
@@ -522,7 +522,7 @@ textarea._Input-input_3pq3z_47 {
   animation-fill-mode: both;
 }
 
-/* css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/DragIcon/styles.module.css/#css-module-data */
+/* css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/DragIcon/styles.module.css/#css-module-data */
 ._DragIcon_1p5wn_1 {
   color: var(--puck-color-grey-05);
   cursor: grab;
@@ -536,7 +536,7 @@ textarea._Input-input_3pq3z_47 {
   }
 }
 
-/* css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/ExternalInput/styles.module.css/#css-module-data */
+/* css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/ExternalInput/styles.module.css/#css-module-data */
 ._ExternalInput-actions_19obq_1 {
   display: flex;
 }
@@ -819,7 +819,7 @@ textarea._Input-input_3pq3z_47 {
   text-align: right;
 }
 
-/* css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/Modal/styles.module.css/#css-module-data */
+/* css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/Modal/styles.module.css/#css-module-data */
 ._Modal_ikbaj_1 {
   background: color-mix(in srgb, var(--puck-color-black) 75%, transparent);
   display: none;
@@ -847,7 +847,7 @@ textarea._Input-input_3pq3z_47 {
   max-height: 90dvh;
 }
 
-/* css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/Heading/styles.module.css/#css-module-data */
+/* css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/Heading/styles.module.css/#css-module-data */
 ._Heading_qxrry_1 {
   display: block;
   color: var(--puck-color-black);
@@ -884,7 +884,7 @@ textarea._Input-input_3pq3z_47 {
   font-size: var(--puck-font-size-xs);
 }
 
-/* css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/Button/Button.module.css/#css-module-data */
+/* css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/Button/Button.module.css/#css-module-data */
 ._Button_1t64k_1 {
   appearance: none;
   background: none;
@@ -973,7 +973,7 @@ textarea._Input-input_3pq3z_47 {
   padding-left: 8px;
 }
 
-/* css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/AutoField/fields/ObjectField/styles.module.css/#css-module-data */
+/* css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/AutoField/fields/ObjectField/styles.module.css/#css-module-data */
 ._ObjectField_1ua3y_5 {
   display: flex;
   flex-direction: column;
@@ -988,7 +988,7 @@ textarea._Input-input_3pq3z_47 {
   padding: 16px 15px;
 }
 
-/* css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/Drawer/styles.module.css/#css-module-data */
+/* css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/Drawer/styles.module.css/#css-module-data */
 ._Drawer_6zh0b_1 {
   font-family: var(--puck-font-family);
 }
@@ -1031,7 +1031,7 @@ textarea._Input-input_3pq3z_47 {
   white-space: nowrap;
 }
 
-/* css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/DraggableComponent/styles.module.css/#css-module-data */
+/* css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/DraggableComponent/styles.module.css/#css-module-data */
 ._DraggableComponent_59z7f_1 {
   pointer-events: auto;
   --overlay-background: color-mix( in srgb, var(--puck-color-azure-08) 30%, transparent );
@@ -1169,7 +1169,7 @@ textarea._Input-input_3pq3z_47 {
   transition: none;
 }
 
-/* css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/DropZone/styles.module.css/#css-module-data */
+/* css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/DropZone/styles.module.css/#css-module-data */
 ._DropZone_djoti_1 {
   margin-left: auto;
   margin-right: auto;
@@ -1215,7 +1215,7 @@ textarea._Input-input_3pq3z_47 {
   z-index: 1;
 }
 
-/* css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/SidebarSection/styles.module.css/#css-module-data */
+/* css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/SidebarSection/styles.module.css/#css-module-data */
 ._SidebarSection_125qe_1 {
   display: flex;
   position: relative;
@@ -1301,7 +1301,7 @@ textarea._Input-input_3pq3z_47 {
   opacity: 0.8;
 }
 
-/* css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/MenuBar/styles.module.css/#css-module-data */
+/* css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/MenuBar/styles.module.css/#css-module-data */
 ._MenuBar_8pf8c_1 {
   background-color: var(--puck-color-white);
   border-bottom: 1px solid var(--puck-color-grey-09);
@@ -1345,7 +1345,7 @@ textarea._Input-input_3pq3z_47 {
   display: flex;
 }
 
-/* css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/Puck/styles.module.css/#css-module-data */
+/* css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/Puck/styles.module.css/#css-module-data */
 ._Puck_1g88c_19 {
   --puck-space-px: 16px;
   font-family: var(--puck-font-family);
@@ -1489,7 +1489,7 @@ textarea._Input-input_3pq3z_47 {
   overflow-y: auto;
 }
 
-/* css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/Puck/components/Fields/styles.module.css/#css-module-data */
+/* css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/Puck/components/Fields/styles.module.css/#css-module-data */
 ._PuckFields_jp3lw_1 {
   position: relative;
   font-family: var(--puck-font-family);
@@ -1518,7 +1518,7 @@ textarea._Input-input_3pq3z_47 {
   top: 0;
 }
 
-/* css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/ComponentList/styles.module.css/#css-module-data */
+/* css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/ComponentList/styles.module.css/#css-module-data */
 ._ComponentList_odh9d_1 {
   max-width: 100%;
 }
@@ -1567,7 +1567,7 @@ textarea._Input-input_3pq3z_47 {
   margin-left: auto;
 }
 
-/* css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/Puck/components/Preview/styles.module.css/#css-module-data */
+/* css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/Puck/components/Preview/styles.module.css/#css-module-data */
 ._PuckPreview_rxwlr_1 {
   height: 100%;
 }
@@ -1577,7 +1577,7 @@ textarea._Input-input_3pq3z_47 {
   width: 100%;
 }
 
-/* css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/LayerTree/styles.module.css/#css-module-data */
+/* css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/LayerTree/styles.module.css/#css-module-data */
 ._LayerTree_1pgw8_1 {
   color: var(--puck-color-grey-03);
   font-family: var(--puck-font-family);
@@ -1680,7 +1680,7 @@ textarea._Input-input_3pq3z_47 {
   margin-top: 4px;
 }
 
-/* css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/ViewportControls/styles.module.css/#css-module-data */
+/* css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/ViewportControls/styles.module.css/#css-module-data */
 ._ViewportControls_g1wgg_1 {
   display: flex;
   background: var(--puck-color-grey-11);
@@ -1714,7 +1714,7 @@ textarea._Input-input_3pq3z_47 {
   color: var(--puck-color-azure-04);
 }
 
-/* css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/Puck/components/Canvas/styles.module.css/#css-module-data */
+/* css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/Puck/components/Canvas/styles.module.css/#css-module-data */
 ._PuckCanvas_6zd4y_1 {
   background: var(--puck-color-grey-11);
   display: flex;

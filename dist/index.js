@@ -34,9 +34,6 @@ var __objRest = (source, exclude) => {
     }
   return target;
 };
-var __esm = (fn, res) => function __init() {
-  return fn && (res = (0, fn[__getOwnPropNames(fn)[0]])(fn = 0)), res;
-};
 var __commonJS = (cb, mod) => function __require() {
   return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
 };
@@ -82,20 +79,10 @@ var __async = (__this, __arguments, generator) => {
   });
 };
 
-// ../tsup-config/react-import.js
-var import_react;
-var init_react_import = __esm({
-  "../tsup-config/react-import.js"() {
-    "use strict";
-    import_react = __toESM(require("react"));
-  }
-});
-
-// ../../node_modules/scheduler/cjs/scheduler.production.min.js
+// node_modules/scheduler/cjs/scheduler.production.min.js
 var require_scheduler_production_min = __commonJS({
-  "../../node_modules/scheduler/cjs/scheduler.production.min.js"(exports) {
+  "node_modules/scheduler/cjs/scheduler.production.min.js"(exports) {
     "use strict";
-    init_react_import();
     function f(a, b) {
       var c = a.length;
       a.push(b);
@@ -363,11 +350,10 @@ var require_scheduler_production_min = __commonJS({
   }
 });
 
-// ../../node_modules/scheduler/cjs/scheduler.development.js
+// node_modules/scheduler/cjs/scheduler.development.js
 var require_scheduler_development = __commonJS({
-  "../../node_modules/scheduler/cjs/scheduler.development.js"(exports) {
+  "node_modules/scheduler/cjs/scheduler.development.js"(exports) {
     "use strict";
-    init_react_import();
     if (process.env.NODE_ENV !== "production") {
       (function() {
         "use strict";
@@ -814,11 +800,10 @@ var require_scheduler_development = __commonJS({
   }
 });
 
-// ../../node_modules/scheduler/index.js
+// node_modules/scheduler/index.js
 var require_scheduler = __commonJS({
-  "../../node_modules/scheduler/index.js"(exports, module2) {
+  "node_modules/scheduler/index.js"(exports, module2) {
     "use strict";
-    init_react_import();
     if (process.env.NODE_ENV === "production") {
       module2.exports = require_scheduler_production_min();
     } else {
@@ -827,11 +812,10 @@ var require_scheduler = __commonJS({
   }
 });
 
-// ../../node_modules/react-dom/cjs/react-dom.production.min.js
+// node_modules/react-dom/cjs/react-dom.production.min.js
 var require_react_dom_production_min = __commonJS({
-  "../../node_modules/react-dom/cjs/react-dom.production.min.js"(exports) {
+  "node_modules/react-dom/cjs/react-dom.production.min.js"(exports) {
     "use strict";
-    init_react_import();
     var aa = require("react");
     var ca = require_scheduler();
     function p(a) {
@@ -7968,20 +7952,19 @@ var require_react_dom_production_min = __commonJS({
   }
 });
 
-// ../../node_modules/react-dom/cjs/react-dom.development.js
+// node_modules/react-dom/cjs/react-dom.development.js
 var require_react_dom_development = __commonJS({
-  "../../node_modules/react-dom/cjs/react-dom.development.js"(exports) {
+  "node_modules/react-dom/cjs/react-dom.development.js"(exports) {
     "use strict";
-    init_react_import();
     if (process.env.NODE_ENV !== "production") {
       (function() {
         "use strict";
         if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart === "function") {
           __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
         }
-        var React4 = require("react");
+        var React3 = require("react");
         var Scheduler = require_scheduler();
-        var ReactSharedInternals = React4.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+        var ReactSharedInternals = React3.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
         var suppressWarning = false;
         function setSuppressWarning(newSuppressWarning) {
           {
@@ -9586,7 +9569,7 @@ var require_react_dom_development = __commonJS({
           {
             if (props.value == null) {
               if (typeof props.children === "object" && props.children !== null) {
-                React4.Children.forEach(props.children, function(child) {
+                React3.Children.forEach(props.children, function(child) {
                   if (child == null) {
                     return;
                   }
@@ -29104,11 +29087,10 @@ var require_react_dom_development = __commonJS({
   }
 });
 
-// ../../node_modules/react-dom/index.js
+// node_modules/react-dom/index.js
 var require_react_dom = __commonJS({
-  "../../node_modules/react-dom/index.js"(exports, module2) {
+  "node_modules/react-dom/index.js"(exports, module2) {
     "use strict";
-    init_react_import();
     function checkDCE() {
       if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === "undefined" || typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== "function") {
         return;
@@ -29132,8 +29114,8 @@ var require_react_dom = __commonJS({
 });
 
 // index.ts
-var core_exports = {};
-__export(core_exports, {
+var vnm_puck_editor_exports = {};
+__export(vnm_puck_editor_exports, {
   AutoField: () => AutoField,
   AutoFieldPrivate: () => AutoFieldPrivate,
   Button: () => Button,
@@ -29151,20 +29133,9 @@ __export(core_exports, {
   transformProps: () => transformProps,
   usePuck: () => usePuck
 });
-module.exports = __toCommonJS(core_exports);
-init_react_import();
-
-// types/Config.tsx
-init_react_import();
-
-// types/Fields.ts
-init_react_import();
-
-// components/AutoField/index.tsx
-init_react_import();
+module.exports = __toCommonJS(vnm_puck_editor_exports);
 
 // lib/get-class-name-factory.ts
-init_react_import();
 var import_classnames = __toESM(require("classnames"));
 var getClassNameFactory = (rootClass, styles, { baseClass = "" } = {}) => (options = {}) => {
   let descendant = false;
@@ -29195,32 +29166,19 @@ var getClassNameFactory = (rootClass, styles, { baseClass = "" } = {}) => (optio
 };
 var get_class_name_factory_default = getClassNameFactory;
 
-// css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/AutoField/styles.module.css#css-module
-init_react_import();
+// css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/AutoField/styles.module.css#css-module
 var styles_module_default = { "Input": "_Input_3pq3z_1", "Input-label": "_Input-label_3pq3z_26", "Input-labelIcon": "_Input-labelIcon_3pq3z_35", "Input-disabledIcon": "_Input-disabledIcon_3pq3z_42", "Input-input": "_Input-input_3pq3z_47", "Input--readOnly": "_Input--readOnly_3pq3z_91", "Input-radioGroupItems": "_Input-radioGroupItems_3pq3z_102", "Input-radio": "_Input-radio_3pq3z_102", "Input-radioInner": "_Input-radioInner_3pq3z_119", "Input-radioInput": "_Input-radioInput_3pq3z_164" };
 
 // components/AutoField/index.tsx
-var import_react11 = require("react");
+var import_react10 = require("react");
 
-// components/AutoField/fields/index.tsx
-init_react_import();
-
-// components/AutoField/fields/ArrayField/index.tsx
-init_react_import();
-
-// css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/AutoField/fields/ArrayField/styles.module.css#css-module
-init_react_import();
+// css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/AutoField/fields/ArrayField/styles.module.css#css-module
 var styles_module_default2 = { "ArrayField": "_ArrayField_1go19_5", "ArrayField--isDraggingFrom": "_ArrayField--isDraggingFrom_1go19_13", "ArrayField-addButton": "_ArrayField-addButton_1go19_18", "ArrayField--hasItems": "_ArrayField--hasItems_1go19_33", "ArrayFieldItem": "_ArrayFieldItem_1go19_63", "ArrayFieldItem--isDragging": "_ArrayFieldItem--isDragging_1go19_71", "ArrayFieldItem--isExpanded": "_ArrayFieldItem--isExpanded_1go19_81", "ArrayFieldItem-summary": "_ArrayFieldItem-summary_1go19_97", "ArrayField--addDisabled": "_ArrayField--addDisabled_1go19_128", "ArrayFieldItem-body": "_ArrayFieldItem-body_1go19_164", "ArrayFieldItem-fieldset": "_ArrayFieldItem-fieldset_1go19_173", "ArrayFieldItem-rhs": "_ArrayFieldItem-rhs_1go19_181", "ArrayFieldItem-actions": "_ArrayFieldItem-actions_1go19_187" };
 
-// ../../node_modules/lucide-react/dist/esm/lucide-react.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/createLucideIcon.js
+var import_react = require("react");
 
-// ../../node_modules/lucide-react/dist/esm/createLucideIcon.js
-init_react_import();
-var import_react2 = require("react");
-
-// ../../node_modules/lucide-react/dist/esm/defaultAttributes.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/defaultAttributes.js
 var defaultAttributes = {
   xmlns: "http://www.w3.org/2000/svg",
   width: 24,
@@ -29233,13 +29191,13 @@ var defaultAttributes = {
   strokeLinejoin: "round"
 };
 
-// ../../node_modules/lucide-react/dist/esm/createLucideIcon.js
+// node_modules/lucide-react/dist/esm/createLucideIcon.js
 var toKebabCase = (string) => string.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLowerCase().trim();
 var createLucideIcon = (iconName, iconNode) => {
-  const Component = (0, import_react2.forwardRef)(
+  const Component = (0, import_react.forwardRef)(
     (_a, ref) => {
       var _b = _a, { color = "currentColor", size = 24, strokeWidth = 2, absoluteStrokeWidth, className = "", children } = _b, rest = __objRest(_b, ["color", "size", "strokeWidth", "absoluteStrokeWidth", "className", "children"]);
-      return (0, import_react2.createElement)(
+      return (0, import_react.createElement)(
         "svg",
         __spreadValues(__spreadProps(__spreadValues({
           ref
@@ -29251,7 +29209,7 @@ var createLucideIcon = (iconName, iconNode) => {
           className: ["lucide", `lucide-${toKebabCase(iconName)}`, className].join(" ")
         }), rest),
         [
-          ...iconNode.map(([tag, attrs]) => (0, import_react2.createElement)(tag, attrs)),
+          ...iconNode.map(([tag, attrs]) => (0, import_react.createElement)(tag, attrs)),
           ...Array.isArray(children) ? children : [children]
         ]
       );
@@ -29261,46 +29219,39 @@ var createLucideIcon = (iconName, iconNode) => {
   return Component;
 };
 
-// ../../node_modules/lucide-react/dist/esm/icons/check-circle.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/check-circle.js
 var CheckCircle = createLucideIcon("CheckCircle", [
   ["path", { d: "M22 11.08V12a10 10 0 1 1-5.93-9.14", key: "g774vq" }],
   ["path", { d: "m9 11 3 3L22 4", key: "1pflzl" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/chevron-down.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/chevron-down.js
 var ChevronDown = createLucideIcon("ChevronDown", [
   ["path", { d: "m6 9 6 6 6-6", key: "qrunsl" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/chevron-right.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/chevron-right.js
 var ChevronRight = createLucideIcon("ChevronRight", [
   ["path", { d: "m9 18 6-6-6-6", key: "mthhwq" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/chevron-up.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/chevron-up.js
 var ChevronUp = createLucideIcon("ChevronUp", [["path", { d: "m18 15-6-6-6 6", key: "153udz" }]]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/copy.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/copy.js
 var Copy = createLucideIcon("Copy", [
   ["rect", { width: "14", height: "14", x: "8", y: "8", rx: "2", ry: "2", key: "17jyea" }],
   ["path", { d: "M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2", key: "zix9uf" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/globe.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/globe.js
 var Globe = createLucideIcon("Globe", [
   ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
   ["path", { d: "M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20", key: "13o1zl" }],
   ["path", { d: "M2 12h20", key: "9i4pu4" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/hash.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/hash.js
 var Hash = createLucideIcon("Hash", [
   ["line", { x1: "4", x2: "20", y1: "9", y2: "9", key: "4lhtct" }],
   ["line", { x1: "4", x2: "20", y1: "15", y2: "15", key: "vyu0kd" }],
@@ -29308,8 +29259,7 @@ var Hash = createLucideIcon("Hash", [
   ["line", { x1: "16", x2: "14", y1: "3", y2: "21", key: "weycgp" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/layers.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/layers.js
 var Layers = createLucideIcon("Layers", [
   [
     "path",
@@ -29322,8 +29272,7 @@ var Layers = createLucideIcon("Layers", [
   ["path", { d: "m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65", key: "ep9fru" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/layout-grid.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/layout-grid.js
 var LayoutGrid = createLucideIcon("LayoutGrid", [
   ["rect", { width: "7", height: "7", x: "3", y: "3", rx: "1", key: "1g98yp" }],
   ["rect", { width: "7", height: "7", x: "14", y: "3", rx: "1", key: "6d4xhi" }],
@@ -29331,15 +29280,13 @@ var LayoutGrid = createLucideIcon("LayoutGrid", [
   ["rect", { width: "7", height: "7", x: "3", y: "14", rx: "1", key: "1bb6yr" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/link.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/link.js
 var Link = createLucideIcon("Link", [
   ["path", { d: "M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71", key: "1cjeqo" }],
   ["path", { d: "M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71", key: "19qd67" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/list.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/list.js
 var List = createLucideIcon("List", [
   ["line", { x1: "8", x2: "21", y1: "6", y2: "6", key: "7ey8pc" }],
   ["line", { x1: "8", x2: "21", y1: "12", y2: "12", key: "rjfblc" }],
@@ -29349,66 +29296,57 @@ var List = createLucideIcon("List", [
   ["line", { x1: "3", x2: "3.01", y1: "18", y2: "18", key: "28t2mc" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/lock.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/lock.js
 var Lock = createLucideIcon("Lock", [
   ["rect", { width: "18", height: "11", x: "3", y: "11", rx: "2", ry: "2", key: "1w4ew1" }],
   ["path", { d: "M7 11V7a5 5 0 0 1 10 0v4", key: "fwvmzm" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/monitor.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/monitor.js
 var Monitor = createLucideIcon("Monitor", [
   ["rect", { width: "20", height: "14", x: "2", y: "3", rx: "2", key: "48i651" }],
   ["line", { x1: "8", x2: "16", y1: "21", y2: "21", key: "1svkeh" }],
   ["line", { x1: "12", x2: "12", y1: "17", y2: "21", key: "vw1qmm" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/more-vertical.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/more-vertical.js
 var MoreVertical = createLucideIcon("MoreVertical", [
   ["circle", { cx: "12", cy: "12", r: "1", key: "41hilf" }],
   ["circle", { cx: "12", cy: "5", r: "1", key: "gxeob9" }],
   ["circle", { cx: "12", cy: "19", r: "1", key: "lyex9k" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/panel-left.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/panel-left.js
 var PanelLeft = createLucideIcon("PanelLeft", [
   ["rect", { width: "18", height: "18", x: "3", y: "3", rx: "2", ry: "2", key: "1m3agn" }],
   ["line", { x1: "9", x2: "9", y1: "3", y2: "21", key: "13tij5" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/panel-right.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/panel-right.js
 var PanelRight = createLucideIcon("PanelRight", [
   ["rect", { width: "18", height: "18", x: "3", y: "3", rx: "2", ry: "2", key: "1m3agn" }],
   ["line", { x1: "15", x2: "15", y1: "3", y2: "21", key: "1hpv9i" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/plus.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/plus.js
 var Plus = createLucideIcon("Plus", [
   ["path", { d: "M5 12h14", key: "1ays0h" }],
   ["path", { d: "M12 5v14", key: "s699le" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/redo-2.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/redo-2.js
 var Redo2 = createLucideIcon("Redo2", [
   ["path", { d: "m15 14 5-5-5-5", key: "12vg1m" }],
   ["path", { d: "M20 9H9.5A5.5 5.5 0 0 0 4 14.5v0A5.5 5.5 0 0 0 9.5 20H13", key: "19mnr4" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/search.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/search.js
 var Search = createLucideIcon("Search", [
   ["circle", { cx: "11", cy: "11", r: "8", key: "4ej97u" }],
   ["path", { d: "m21 21-4.3-4.3", key: "1qie3q" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/sliders-horizontal.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/sliders-horizontal.js
 var SlidersHorizontal = createLucideIcon("SlidersHorizontal", [
   ["line", { x1: "21", x2: "14", y1: "4", y2: "4", key: "obuewd" }],
   ["line", { x1: "10", x2: "3", y1: "4", y2: "4", key: "1q6298" }],
@@ -29421,52 +29359,45 @@ var SlidersHorizontal = createLucideIcon("SlidersHorizontal", [
   ["line", { x1: "16", x2: "16", y1: "18", y2: "22", key: "1lctlv" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/smartphone.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/smartphone.js
 var Smartphone = createLucideIcon("Smartphone", [
   ["rect", { width: "14", height: "20", x: "5", y: "2", rx: "2", ry: "2", key: "1yt0o3" }],
   ["path", { d: "M12 18h.01", key: "mhygvu" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/tablet.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/tablet.js
 var Tablet = createLucideIcon("Tablet", [
   ["rect", { width: "16", height: "20", x: "4", y: "2", rx: "2", ry: "2", key: "76otgf" }],
   ["line", { x1: "12", x2: "12.01", y1: "18", y2: "18", key: "1dp563" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/trash.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/trash.js
 var Trash = createLucideIcon("Trash", [
   ["path", { d: "M3 6h18", key: "d0wm0j" }],
   ["path", { d: "M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6", key: "4alrt4" }],
   ["path", { d: "M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2", key: "v07s0e" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/type.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/type.js
 var Type = createLucideIcon("Type", [
   ["polyline", { points: "4 7 4 4 20 4 20 7", key: "1nosan" }],
   ["line", { x1: "9", x2: "15", y1: "20", y2: "20", key: "swin9y" }],
   ["line", { x1: "12", x2: "12", y1: "4", y2: "20", key: "1tx1rr" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/undo-2.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/undo-2.js
 var Undo2 = createLucideIcon("Undo2", [
   ["path", { d: "M9 14 4 9l5-5", key: "102s5s" }],
   ["path", { d: "M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5v0a5.5 5.5 0 0 1-5.5 5.5H11", key: "llx8ln" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/unlock.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/unlock.js
 var Unlock = createLucideIcon("Unlock", [
   ["rect", { width: "18", height: "11", x: "3", y: "11", rx: "2", ry: "2", key: "1w4ew1" }],
   ["path", { d: "M7 11V7a5 5 0 0 1 9.9-1", key: "1mm8w8" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/zoom-in.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/zoom-in.js
 var ZoomIn = createLucideIcon("ZoomIn", [
   ["circle", { cx: "11", cy: "11", r: "8", key: "4ej97u" }],
   ["line", { x1: "21", x2: "16.65", y1: "21", y2: "16.65", key: "13gj7c" }],
@@ -29474,36 +29405,20 @@ var ZoomIn = createLucideIcon("ZoomIn", [
   ["line", { x1: "8", x2: "14", y1: "11", y2: "11", key: "durymu" }]
 ]);
 
-// ../../node_modules/lucide-react/dist/esm/icons/zoom-out.js
-init_react_import();
+// node_modules/lucide-react/dist/esm/icons/zoom-out.js
 var ZoomOut = createLucideIcon("ZoomOut", [
   ["circle", { cx: "11", cy: "11", r: "8", key: "4ej97u" }],
   ["line", { x1: "21", x2: "16.65", y1: "21", y2: "16.65", key: "13gj7c" }],
   ["line", { x1: "8", x2: "14", y1: "11", y2: "11", key: "durymu" }]
 ]);
 
-// components/IconButton/index.ts
-init_react_import();
-
 // components/IconButton/IconButton.tsx
-init_react_import();
-var import_react3 = require("react");
+var import_react2 = require("react");
 
-// css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/IconButton/IconButton.module.css#css-module
-init_react_import();
+// css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/IconButton/IconButton.module.css#css-module
 var IconButton_module_default = { "IconButton": "_IconButton_swpni_1", "IconButton--disabled": "_IconButton--disabled_swpni_20", "IconButton-title": "_IconButton-title_swpni_33" };
 
-// components/Loader/index.tsx
-init_react_import();
-
-// lib/index.ts
-init_react_import();
-
-// lib/filter.ts
-init_react_import();
-
 // lib/reorder.ts
-init_react_import();
 var reorder = (list, startIndex, endIndex) => {
   const result = Array.from(list);
   const [removed] = result.splice(startIndex, 1);
@@ -29512,7 +29427,6 @@ var reorder = (list, startIndex, endIndex) => {
 };
 
 // lib/replace.ts
-init_react_import();
 var replace = (list, index, newItem) => {
   const result = Array.from(list);
   result.splice(index, 1);
@@ -29520,8 +29434,7 @@ var replace = (list, index, newItem) => {
   return result;
 };
 
-// css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/Loader/styles.module.css#css-module
-init_react_import();
+// css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/Loader/styles.module.css#css-module
 var styles_module_default3 = { "Loader": "_Loader_nacdm_13", "loader-animation": "_loader-animation_nacdm_1" };
 
 // components/Loader/index.tsx
@@ -29564,7 +29477,7 @@ var IconButton = ({
   fullWidth,
   title
 }) => {
-  const [loading, setLoading] = (0, import_react3.useState)(false);
+  const [loading, setLoading] = (0, import_react2.useState)(false);
   const ElementType = href ? "a" : "button";
   const el = /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(
     ElementType,
@@ -29604,22 +29517,15 @@ var IconButton = ({
 };
 
 // components/Droppable/index.tsx
-init_react_import();
 var import_dnd = require("@measured/dnd");
 
 // components/Puck/context.tsx
-init_react_import();
-var import_react4 = require("react");
-
-// lib/get-item.ts
-init_react_import();
+var import_react3 = require("react");
 
 // lib/root-droppable-id.ts
-init_react_import();
 var rootDroppableId = "default-zone";
 
 // lib/setup-zone.ts
-init_react_import();
 var setupZone = (data, zoneKey) => {
   if (zoneKey === rootDroppableId) {
     return data;
@@ -29641,7 +29547,6 @@ var getItem = (selector, data, dynamicProps = {}) => {
 };
 
 // components/ViewportControls/default-viewports.ts
-init_react_import();
 var defaultViewports = [
   { width: 360, height: "auto", icon: "Smartphone", label: "Small" },
   { width: 768, height: "auto", icon: "Tablet", label: "Medium" },
@@ -29692,18 +29597,18 @@ var defaultContext = {
   iframe: {},
   safariFallbackMode: false
 };
-var appContext = (0, import_react4.createContext)(defaultContext);
+var appContext = (0, import_react3.createContext)(defaultContext);
 var AppProvider = ({
   children,
   value
 }) => {
-  const [zoomConfig, setZoomConfig] = (0, import_react4.useState)(defaultContext.zoomConfig);
-  const [status, setStatus] = (0, import_react4.useState)("LOADING");
-  (0, import_react4.useEffect)(() => {
+  const [zoomConfig, setZoomConfig] = (0, import_react3.useState)(defaultContext.zoomConfig);
+  const [status, setStatus] = (0, import_react3.useState)("LOADING");
+  (0, import_react3.useEffect)(() => {
     setStatus("MOUNTED");
   }, []);
-  const [safariFallbackMode, setSafariFallbackMode] = (0, import_react4.useState)(false);
-  (0, import_react4.useEffect)(() => {
+  const [safariFallbackMode, setSafariFallbackMode] = (0, import_react3.useState)(false);
+  (0, import_react3.useEffect)(() => {
     var _a, _b, _c;
     const ua = new import_ua_parser_js.UAParser(navigator.userAgent);
     const { browser } = ua.getResult();
@@ -29735,7 +29640,7 @@ See https://github.com/measuredco/puck/issues/411 for more information. This mes
   );
 };
 function useAppContext() {
-  const mainContext = (0, import_react4.useContext)(appContext);
+  const mainContext = (0, import_react3.useContext)(appContext);
   const selectedItem = mainContext.state.ui.itemSelector ? getItem(mainContext.state.ui.itemSelector, mainContext.state.data) : void 0;
   return __spreadProps(__spreadValues({}, mainContext), {
     // Helpers
@@ -29774,7 +29679,6 @@ var Droppable = (props) => {
 };
 
 // components/Draggable/index.tsx
-init_react_import();
 var import_dnd2 = require("@measured/dnd");
 var import_jsx_runtime5 = require("react/jsx-runtime");
 var defaultProvided2 = {
@@ -29840,13 +29744,9 @@ var Draggable = ({
 };
 
 // components/AutoField/fields/ArrayField/index.tsx
-var import_react5 = require("react");
+var import_react4 = require("react");
 
-// components/DragIcon/index.tsx
-init_react_import();
-
-// css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/DragIcon/styles.module.css#css-module
-init_react_import();
+// css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/DragIcon/styles.module.css#css-module
 var styles_module_default4 = { "DragIcon": "_DragIcon_1p5wn_1" };
 
 // components/DragIcon/index.tsx
@@ -29855,7 +29755,6 @@ var getClassName3 = get_class_name_factory_default("DragIcon", styles_module_def
 var DragIcon = () => /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { className: getClassName3(), children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("svg", { viewBox: "0 0 20 20", width: "12", fill: "currentColor", children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("path", { d: "M7 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 2zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 14zm6-8a2 2 0 1 0-.001-4.001A2 2 0 0 0 13 6zm0 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 8zm0 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 13 14z" }) }) });
 
 // components/DragDropContext/index.tsx
-init_react_import();
 var import_dnd3 = require("@measured/dnd");
 var import_jsx_runtime7 = require("react/jsx-runtime");
 var DefaultDragDropContext = ({ children }) => /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(import_jsx_runtime7.Fragment, { children });
@@ -29891,11 +29790,11 @@ var ArrayField = ({
     }),
     openId: ""
   };
-  const [localState, setLocalState] = (0, import_react5.useState)({ arrayState, value });
-  (0, import_react5.useEffect)(() => {
+  const [localState, setLocalState] = (0, import_react4.useState)({ arrayState, value });
+  (0, import_react4.useEffect)(() => {
     setLocalState({ arrayState, value });
   }, [value, state.ui.arrayState[id]]);
-  const mapArrayStateToUi = (0, import_react5.useCallback)(
+  const mapArrayStateToUi = (0, import_react4.useCallback)(
     (partialArrayState) => {
       return {
         arrayState: __spreadProps(__spreadValues({}, state.ui.arrayState), {
@@ -29905,13 +29804,13 @@ var ArrayField = ({
     },
     [arrayState]
   );
-  const getHighestIndex = (0, import_react5.useCallback)(() => {
+  const getHighestIndex = (0, import_react4.useCallback)(() => {
     return arrayState.items.reduce(
       (acc, item) => item._originalIndex > acc ? item._originalIndex : acc,
       -1
     );
   }, [arrayState]);
-  const regenerateArrayState = (0, import_react5.useCallback)(
+  const regenerateArrayState = (0, import_react4.useCallback)(
     (value2) => {
       let highestIndex = getHighestIndex();
       const newItems = Array.from(value2 || []).map((item, idx) => {
@@ -29930,12 +29829,12 @@ var ArrayField = ({
     },
     [arrayState]
   );
-  (0, import_react5.useEffect)(() => {
+  (0, import_react4.useEffect)(() => {
     if (arrayState.items.length > 0) {
       setUi(mapArrayStateToUi(arrayState));
     }
   }, []);
-  const [hovering, setHovering] = (0, import_react5.useState)(false);
+  const [hovering, setHovering] = (0, import_react4.useState)(false);
   if (field.type !== "array" || !field.arrayFields) {
     return null;
   }
@@ -30122,7 +30021,6 @@ var ArrayField = ({
 };
 
 // components/AutoField/fields/DefaultField/index.tsx
-init_react_import();
 var import_jsx_runtime9 = require("react/jsx-runtime");
 var getClassName5 = get_class_name_factory_default("Input", styles_module_default);
 var DefaultField = ({
@@ -30171,23 +30069,18 @@ var DefaultField = ({
 };
 
 // components/AutoField/fields/ExternalField/index.tsx
-init_react_import();
-var import_react9 = require("react");
-
-// components/ExternalInput/index.tsx
-init_react_import();
 var import_react8 = require("react");
 
-// css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/ExternalInput/styles.module.css#css-module
-init_react_import();
+// components/ExternalInput/index.tsx
+var import_react7 = require("react");
+
+// css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/ExternalInput/styles.module.css#css-module
 var styles_module_default5 = { "ExternalInput-actions": "_ExternalInput-actions_19obq_1", "ExternalInput-button": "_ExternalInput-button_19obq_5", "ExternalInput--dataSelected": "_ExternalInput--dataSelected_19obq_25", "ExternalInput-detachButton": "_ExternalInput-detachButton_19obq_32", "ExternalInputModal": "_ExternalInputModal_19obq_74", "ExternalInputModal-grid": "_ExternalInputModal-grid_19obq_84", "ExternalInputModal--filtersToggled": "_ExternalInputModal--filtersToggled_19obq_95", "ExternalInputModal-filters": "_ExternalInputModal-filters_19obq_100", "ExternalInputModal-masthead": "_ExternalInputModal-masthead_19obq_119", "ExternalInputModal-tableWrapper": "_ExternalInputModal-tableWrapper_19obq_128", "ExternalInputModal-table": "_ExternalInputModal-table_19obq_128", "ExternalInputModal-thead": "_ExternalInputModal-thead_19obq_144", "ExternalInputModal-th": "_ExternalInputModal-th_19obq_144", "ExternalInputModal-td": "_ExternalInputModal-td_19obq_159", "ExternalInputModal-tr": "_ExternalInputModal-tr_19obq_164", "ExternalInputModal-tbody": "_ExternalInputModal-tbody_19obq_171", "ExternalInputModal--hasData": "_ExternalInputModal--hasData_19obq_197", "ExternalInputModal-loadingBanner": "_ExternalInputModal-loadingBanner_19obq_201", "ExternalInputModal--isLoading": "_ExternalInputModal--isLoading_19obq_218", "ExternalInputModal-searchForm": "_ExternalInputModal-searchForm_19obq_222", "ExternalInputModal-search": "_ExternalInputModal-search_19obq_222", "ExternalInputModal-searchIcon": "_ExternalInputModal-searchIcon_19obq_259", "ExternalInputModal-searchIconText": "_ExternalInputModal-searchIconText_19obq_284", "ExternalInputModal-searchInput": "_ExternalInputModal-searchInput_19obq_294", "ExternalInputModal-searchActions": "_ExternalInputModal-searchActions_19obq_308", "ExternalInputModal-searchActionIcon": "_ExternalInputModal-searchActionIcon_19obq_321", "ExternalInputModal-footer": "_ExternalInputModal-footer_19obq_325" };
 
 // components/Modal/index.tsx
-init_react_import();
-var import_react6 = require("react");
+var import_react5 = require("react");
 
-// css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/Modal/styles.module.css#css-module
-init_react_import();
+// css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/Modal/styles.module.css#css-module
 var styles_module_default6 = { "Modal": "_Modal_ikbaj_1", "Modal--isOpen": "_Modal--isOpen_ikbaj_15", "Modal-inner": "_Modal-inner_ikbaj_19" };
 
 // components/Modal/index.tsx
@@ -30199,8 +30092,8 @@ var Modal = ({
   onClose,
   isOpen
 }) => {
-  const [rootEl, setRootEl] = (0, import_react6.useState)(null);
-  (0, import_react6.useEffect)(() => {
+  const [rootEl, setRootEl] = (0, import_react5.useState)(null);
+  (0, import_react5.useEffect)(() => {
     setRootEl(document.getElementById("puck-portal-root"));
   }, []);
   if (!rootEl) {
@@ -30219,11 +30112,7 @@ var Modal = ({
   );
 };
 
-// components/Heading/index.tsx
-init_react_import();
-
-// css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/Heading/styles.module.css#css-module
-init_react_import();
+// css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/Heading/styles.module.css#css-module
 var styles_module_default7 = { "Heading": "_Heading_qxrry_1", "Heading--xxxxl": "_Heading--xxxxl_qxrry_12", "Heading--xxxl": "_Heading--xxxl_qxrry_18", "Heading--xxl": "_Heading--xxl_qxrry_22", "Heading--xl": "_Heading--xl_qxrry_26", "Heading--l": "_Heading--l_qxrry_30", "Heading--m": "_Heading--m_qxrry_34", "Heading--s": "_Heading--s_qxrry_38", "Heading--xs": "_Heading--xs_qxrry_42" };
 
 // components/Heading/index.tsx
@@ -30242,15 +30131,10 @@ var Heading = ({ children, rank, size = "m" }) => {
   );
 };
 
-// components/Button/index.ts
-init_react_import();
-
 // components/Button/Button.tsx
-init_react_import();
-var import_react7 = require("react");
+var import_react6 = require("react");
 
-// css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/Button/Button.module.css#css-module
-init_react_import();
+// css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/Button/Button.module.css#css-module
 var Button_module_default = { "Button": "_Button_1t64k_1", "Button--medium": "_Button--medium_1t64k_29", "Button--large": "_Button--large_1t64k_37", "Button-icon": "_Button-icon_1t64k_44", "Button--primary": "_Button--primary_1t64k_48", "Button--secondary": "_Button--secondary_1t64k_67", "Button--flush": "_Button--flush_1t64k_84", "Button--disabled": "_Button--disabled_1t64k_88", "Button--fullWidth": "_Button--fullWidth_1t64k_95", "Button-spinner": "_Button-spinner_1t64k_100" };
 
 // components/Button/Button.tsx
@@ -30270,8 +30154,8 @@ var Button = ({
   size = "medium",
   loading: loadingProp = false
 }) => {
-  const [loading, setLoading] = (0, import_react7.useState)(loadingProp);
-  (0, import_react7.useEffect)(() => setLoading(loadingProp), [loadingProp]);
+  const [loading, setLoading] = (0, import_react6.useState)(loadingProp);
+  (0, import_react6.useEffect)(() => setLoading(loadingProp), [loadingProp]);
   const ElementType = href ? "a" : type ? "button" : "span";
   const el = /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)(
     ElementType,
@@ -30324,16 +30208,16 @@ var ExternalInput = ({
     mapRow = (val) => val,
     filterFields
   } = field || {};
-  const [data, setData] = (0, import_react8.useState)([]);
-  const [isOpen, setOpen] = (0, import_react8.useState)(false);
-  const [isLoading, setIsLoading] = (0, import_react8.useState)(true);
+  const [data, setData] = (0, import_react7.useState)([]);
+  const [isOpen, setOpen] = (0, import_react7.useState)(false);
+  const [isLoading, setIsLoading] = (0, import_react7.useState)(true);
   const hasFilterFields = !!filterFields;
-  const [filters, setFilters] = (0, import_react8.useState)(field.initialFilters || {});
-  const [filtersToggled, setFiltersToggled] = (0, import_react8.useState)(hasFilterFields);
-  const mappedData = (0, import_react8.useMemo)(() => {
+  const [filters, setFilters] = (0, import_react7.useState)(field.initialFilters || {});
+  const [filtersToggled, setFiltersToggled] = (0, import_react7.useState)(hasFilterFields);
+  const mappedData = (0, import_react7.useMemo)(() => {
     return data.map(mapRow);
   }, [data]);
-  const keys = (0, import_react8.useMemo)(() => {
+  const keys = (0, import_react7.useMemo)(() => {
     const validKeys = /* @__PURE__ */ new Set();
     for (const item of mappedData) {
       for (const key of Object.keys(item)) {
@@ -30344,8 +30228,8 @@ var ExternalInput = ({
     }
     return Array.from(validKeys);
   }, [mappedData]);
-  const [searchQuery, setSearchQuery] = (0, import_react8.useState)(field.initialQuery || "");
-  const search = (0, import_react8.useCallback)(
+  const [searchQuery, setSearchQuery] = (0, import_react7.useState)(field.initialQuery || "");
+  const search = (0, import_react7.useCallback)(
     (query, filters2) => __async(void 0, null, function* () {
       setIsLoading(true);
       const cacheKey = `${id}-${query}-${JSON.stringify(filters2)}`;
@@ -30358,7 +30242,7 @@ var ExternalInput = ({
     }),
     [id, field]
   );
-  (0, import_react8.useEffect)(() => {
+  (0, import_react7.useEffect)(() => {
     search(searchQuery, filters);
   }, []);
   return /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)(
@@ -30520,7 +30404,7 @@ var ExternalField = ({
   var _a, _b, _c;
   const validField = field;
   const deprecatedField = field;
-  (0, import_react9.useEffect)(() => {
+  (0, import_react8.useEffect)(() => {
     if (deprecatedField.adaptor) {
       console.error(
         "Warning: The `adaptor` API is deprecated. Please use updated APIs on the `external` field instead. This will be a breaking change in a future release."
@@ -30553,7 +30437,6 @@ var ExternalField = ({
 };
 
 // components/AutoField/fields/RadioField/index.tsx
-init_react_import();
 var import_jsx_runtime15 = require("react/jsx-runtime");
 var getClassName10 = get_class_name_factory_default("Input", styles_module_default);
 var RadioField = ({
@@ -30609,7 +30492,6 @@ var RadioField = ({
 };
 
 // components/AutoField/fields/SelectField/index.tsx
-init_react_import();
 var import_jsx_runtime16 = require("react/jsx-runtime");
 var getClassName11 = get_class_name_factory_default("Input", styles_module_default);
 var SelectField = ({
@@ -30660,7 +30542,6 @@ var SelectField = ({
 };
 
 // components/AutoField/fields/TextareaField/index.tsx
-init_react_import();
 var import_jsx_runtime17 = require("react/jsx-runtime");
 var getClassName12 = get_class_name_factory_default("Input", styles_module_default);
 var TextareaField = ({
@@ -30691,11 +30572,7 @@ var TextareaField = ({
 // components/AutoField/index.tsx
 var import_use_debounce = require("use-debounce");
 
-// components/AutoField/fields/ObjectField/index.tsx
-init_react_import();
-
-// css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/AutoField/fields/ObjectField/styles.module.css#css-module
-init_react_import();
+// css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/AutoField/fields/ObjectField/styles.module.css#css-module
 var styles_module_default8 = { "ObjectField": "_ObjectField_1ua3y_5", "ObjectField-fieldset": "_ObjectField-fieldset_1ua3y_13" };
 
 // components/AutoField/fields/ObjectField/index.tsx
@@ -30754,20 +30631,18 @@ var ObjectField = ({
 };
 
 // lib/use-safe-id.ts
-init_react_import();
-var import_react10 = __toESM(require("react"));
+var import_react9 = __toESM(require("react"));
 
 // lib/generate-id.ts
-init_react_import();
 var import_uuid = require("uuid");
 var generateId = (type) => type ? `${type}-${(0, import_uuid.v4)()}` : (0, import_uuid.v4)();
 
 // lib/use-safe-id.ts
 var useSafeId = () => {
-  if (typeof import_react10.default.useId !== "undefined") {
-    return import_react10.default.useId();
+  if (typeof import_react9.default.useId !== "undefined") {
+    return import_react9.default.useId();
   }
-  const [id] = (0, import_react10.useState)(generateId());
+  const [id] = (0, import_react9.useState)(generateId());
   return id;
 };
 
@@ -30800,7 +30675,7 @@ var FieldLabelInternal2 = ({
   readOnly
 }) => {
   const { overrides } = useAppContext();
-  const Wrapper = (0, import_react11.useMemo)(
+  const Wrapper = (0, import_react10.useMemo)(
     () => overrides.fieldLabel || FieldLabel,
     [overrides]
   );
@@ -30864,7 +30739,7 @@ function AutoFieldInternal(props) {
 }
 function AutoFieldPrivate(props) {
   const { value, onChange } = props;
-  const [localValue, setLocalValue] = (0, import_react11.useState)(value);
+  const [localValue, setLocalValue] = (0, import_react10.useState)(value);
   const onChangeDb = (0, import_use_debounce.useDebouncedCallback)(
     (val, ui) => {
       onChange(val, ui);
@@ -30872,11 +30747,11 @@ function AutoFieldPrivate(props) {
     50,
     { leading: true }
   );
-  const onChangeLocal = (0, import_react11.useCallback)((val, ui) => {
+  const onChangeLocal = (0, import_react10.useCallback)((val, ui) => {
     setLocalValue(val);
     onChangeDb(val, ui);
   }, []);
-  (0, import_react11.useEffect)(() => {
+  (0, import_react10.useEffect)(() => {
     setLocalValue(value);
   }, [value]);
   const localProps = {
@@ -30890,19 +30765,15 @@ function AutoField(props) {
   return /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(AutoFieldInternal, __spreadProps(__spreadValues({}, props), { Label: DefaultLabel }));
 }
 
-// components/Drawer/index.tsx
-init_react_import();
-
-// css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/Drawer/styles.module.css#css-module
-init_react_import();
+// css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/Drawer/styles.module.css#css-module
 var styles_module_default9 = { "Drawer": "_Drawer_6zh0b_1", "DrawerItem-default": "_DrawerItem-default_6zh0b_5", "DrawerItem-draggableWrapper": "_DrawerItem-draggableWrapper_6zh0b_5", "DrawerItem": "_DrawerItem_6zh0b_5", "DrawerItem-draggable": "_DrawerItem-draggable_6zh0b_5", "Drawer--isDraggingFrom": "_Drawer--isDraggingFrom_6zh0b_31", "DrawerItem-name": "_DrawerItem-name_6zh0b_47" };
 
 // components/Drawer/index.tsx
-var import_react12 = require("react");
+var import_react11 = require("react");
 var import_jsx_runtime20 = require("react/jsx-runtime");
 var getClassName15 = get_class_name_factory_default("Drawer", styles_module_default9);
 var getClassNameItem2 = get_class_name_factory_default("DrawerItem", styles_module_default9);
-var drawerContext = (0, import_react12.createContext)({
+var drawerContext = (0, import_react11.createContext)({
   droppableId: ""
 });
 var DrawerDraggable = ({
@@ -30928,9 +30799,9 @@ var DrawerItem = ({
   label,
   index
 }) => {
-  const ctx = (0, import_react12.useContext)(drawerContext);
+  const ctx = (0, import_react11.useContext)(drawerContext);
   const resolvedId = `${ctx.droppableId}::${id || name}`;
-  const CustomInner = (0, import_react12.useMemo)(
+  const CustomInner = (0, import_react11.useMemo)(
     () => children || (({ children: children2, name: name2 }) => /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("div", { className: getClassNameItem2("default"), children: children2 })),
     [children]
   );
@@ -30962,24 +30833,20 @@ var Drawer = ({
 Drawer.Item = DrawerItem;
 
 // components/DropZone/index.tsx
-init_react_import();
-var import_react16 = require("react");
+var import_react15 = require("react");
 
 // components/DraggableComponent/index.tsx
-init_react_import();
-var import_react14 = require("react");
+var import_react13 = require("react");
 var import_dnd4 = require("@measured/dnd");
 
-// css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/DraggableComponent/styles.module.css#css-module
-init_react_import();
+// css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/DraggableComponent/styles.module.css#css-module
 var styles_module_default10 = { "DraggableComponent": "_DraggableComponent_59z7f_1", "DraggableComponent--isDragging": "_DraggableComponent--isDragging_59z7f_11", "DraggableComponent-contents": "_DraggableComponent-contents_59z7f_16", "DraggableComponent-overlay": "_DraggableComponent-overlay_59z7f_29", "DraggableComponent-loadingOverlay": "_DraggableComponent-loadingOverlay_59z7f_49", "DraggableComponent--isLocked": "_DraggableComponent--isLocked_59z7f_65", "DraggableComponent--forceHover": "_DraggableComponent--forceHover_59z7f_71", "DraggableComponent--isSelected": "_DraggableComponent--isSelected_59z7f_76", "DraggableComponent--indicativeHover": "_DraggableComponent--indicativeHover_59z7f_81", "DraggableComponent-actionsOverlay": "_DraggableComponent-actionsOverlay_59z7f_97", "DraggableComponent-actions": "_DraggableComponent-actions_59z7f_97", "DraggableComponent-actionsLabel": "_DraggableComponent-actionsLabel_59z7f_127", "DraggableComponent-action": "_DraggableComponent-action_59z7f_97" };
 
 // lib/use-modifier-held.ts
-init_react_import();
-var import_react13 = require("react");
+var import_react12 = require("react");
 var useModifierHeld = (modifier) => {
-  const [modifierHeld, setModifierHeld] = (0, import_react13.useState)(false);
-  (0, import_react13.useEffect)(() => {
+  const [modifierHeld, setModifierHeld] = (0, import_react12.useState)(false);
+  (0, import_react12.useEffect)(() => {
     function downHandler({ key }) {
       if (key === modifier) {
         setModifierHeld(true);
@@ -31001,7 +30868,6 @@ var useModifierHeld = (modifier) => {
 };
 
 // lib/is-ios.ts
-init_react_import();
 var isIos = () => [
   "iPad Simulator",
   "iPhone Simulator",
@@ -31045,9 +30911,9 @@ var DraggableComponent = ({
   const isModifierHeld = useModifierHeld("Alt");
   const { status } = useAppContext();
   const El = status !== "LOADING" ? import_dnd4.Draggable : DefaultDraggable;
-  (0, import_react14.useEffect)(onMount, []);
-  const [disableSecondaryAnimation, setDisableSecondaryAnimation] = (0, import_react14.useState)(false);
-  (0, import_react14.useEffect)(() => {
+  (0, import_react13.useEffect)(onMount, []);
+  const [disableSecondaryAnimation, setDisableSecondaryAnimation] = (0, import_react13.useState)(false);
+  (0, import_react13.useEffect)(() => {
     if (isIos()) {
       setDisableSecondaryAnimation(true);
     }
@@ -31118,17 +30984,14 @@ var DraggableComponent = ({
   );
 };
 
-// css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/DropZone/styles.module.css#css-module
-init_react_import();
+// css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/DropZone/styles.module.css#css-module
 var styles_module_default11 = { "DropZone": "_DropZone_djoti_1", "DropZone-content": "_DropZone-content_djoti_10", "DropZone--userIsDragging": "_DropZone--userIsDragging_djoti_15", "DropZone--draggingOverArea": "_DropZone--draggingOverArea_djoti_19", "DropZone--draggingNewComponent": "_DropZone--draggingNewComponent_djoti_20", "DropZone--isAreaSelected": "_DropZone--isAreaSelected_djoti_26", "DropZone--hoveringOverArea": "_DropZone--hoveringOverArea_djoti_27", "DropZone--isDisabled": "_DropZone--isDisabled_djoti_28", "DropZone--isRootZone": "_DropZone--isRootZone_djoti_29", "DropZone--hasChildren": "_DropZone--hasChildren_djoti_30", "DropZone--isDestination": "_DropZone--isDestination_djoti_40", "DropZone-item": "_DropZone-item_djoti_52", "DropZone-hitbox": "_DropZone-hitbox_djoti_56" };
 
 // components/DropZone/context.tsx
-init_react_import();
-var import_react15 = require("react");
+var import_react14 = require("react");
 var import_use_debounce2 = require("use-debounce");
 
 // lib/get-zone-id.ts
-init_react_import();
 var getZoneId = (zoneCompound) => {
   if (!zoneCompound) {
     return [];
@@ -31141,29 +31004,29 @@ var getZoneId = (zoneCompound) => {
 
 // components/DropZone/context.tsx
 var import_jsx_runtime22 = require("react/jsx-runtime");
-var dropZoneContext = (0, import_react15.createContext)(null);
+var dropZoneContext = (0, import_react14.createContext)(null);
 var DropZoneProvider = ({
   children,
   value
 }) => {
-  const [hoveringArea, setHoveringArea] = (0, import_react15.useState)(null);
-  const [hoveringZone, setHoveringZone] = (0, import_react15.useState)(
+  const [hoveringArea, setHoveringArea] = (0, import_react14.useState)(null);
+  const [hoveringZone, setHoveringZone] = (0, import_react14.useState)(
     rootDroppableId
   );
-  const [hoveringComponent, setHoveringComponent] = (0, import_react15.useState)();
+  const [hoveringComponent, setHoveringComponent] = (0, import_react14.useState)();
   const [hoveringAreaDb] = (0, import_use_debounce2.useDebounce)(hoveringArea, 75, { leading: false });
-  const [areasWithZones, setAreasWithZones] = (0, import_react15.useState)(
+  const [areasWithZones, setAreasWithZones] = (0, import_react14.useState)(
     {}
   );
-  const [activeZones, setActiveZones] = (0, import_react15.useState)({});
+  const [activeZones, setActiveZones] = (0, import_react14.useState)({});
   const { dispatch = null } = value ? value : {};
-  const registerZoneArea = (0, import_react15.useCallback)(
+  const registerZoneArea = (0, import_react14.useCallback)(
     (area) => {
       setAreasWithZones((latest) => __spreadProps(__spreadValues({}, latest), { [area]: true }));
     },
     [setAreasWithZones]
   );
-  const registerZone = (0, import_react15.useCallback)(
+  const registerZone = (0, import_react14.useCallback)(
     (zoneCompound) => {
       if (!dispatch) {
         return;
@@ -31176,7 +31039,7 @@ var DropZoneProvider = ({
     },
     [setActiveZones, dispatch]
   );
-  const unregisterZone = (0, import_react15.useCallback)(
+  const unregisterZone = (0, import_react14.useCallback)(
     (zoneCompound) => {
       if (!dispatch) {
         return;
@@ -31191,8 +31054,8 @@ var DropZoneProvider = ({
     },
     [setActiveZones, dispatch]
   );
-  const [pathData, setPathData] = (0, import_react15.useState)();
-  const registerPath = (0, import_react15.useCallback)(
+  const [pathData, setPathData] = (0, import_react14.useState)();
+  const registerPath = (0, import_react14.useCallback)(
     (selector) => {
       if (!(value == null ? void 0 : value.data)) {
         return;
@@ -31217,7 +31080,7 @@ var DropZoneProvider = ({
     },
     [value, setPathData]
   );
-  const [zoneWillDrag, setZoneWillDrag] = (0, import_react15.useState)("");
+  const [zoneWillDrag, setZoneWillDrag] = (0, import_react14.useState)("");
   return /* @__PURE__ */ (0, import_jsx_runtime22.jsx)(import_jsx_runtime22.Fragment, { children: value && /* @__PURE__ */ (0, import_jsx_runtime22.jsx)(
     dropZoneContext.Provider,
     {
@@ -31249,7 +31112,7 @@ var getClassName17 = get_class_name_factory_default("DropZone", styles_module_de
 function DropZoneEdit({ zone, allow, disallow, style, isDisabled }) {
   var _a;
   const appContext2 = useAppContext();
-  const ctx = (0, import_react16.useContext)(dropZoneContext);
+  const ctx = (0, import_react15.useContext)(dropZoneContext);
   const {
     // These all need setting via context
     data,
@@ -31268,12 +31131,12 @@ function DropZoneEdit({ zone, allow, disallow, style, isDisabled }) {
   } = ctx || {};
   let content = data.content || [];
   let zoneCompound = rootDroppableId;
-  (0, import_react16.useEffect)(() => {
+  (0, import_react15.useEffect)(() => {
     if (areaId && registerZoneArea) {
       registerZoneArea(areaId);
     }
   }, [areaId]);
-  (0, import_react16.useEffect)(() => {
+  (0, import_react15.useEffect)(() => {
     if (ctx == null ? void 0 : ctx.registerZone) {
       ctx == null ? void 0 : ctx.registerZone(zoneCompound);
     }
@@ -31522,7 +31385,7 @@ function DropZoneEdit({ zone, allow, disallow, style, isDisabled }) {
   );
 }
 function DropZoneRender({ zone }) {
-  const ctx = (0, import_react16.useContext)(dropZoneContext);
+  const ctx = (0, import_react15.useContext)(dropZoneContext);
   const { data, areaId = "root", config } = ctx || {};
   let zoneCompound = rootDroppableId;
   let content = (data == null ? void 0 : data.content) || [];
@@ -31554,7 +31417,7 @@ function DropZoneRender({ zone }) {
   }) });
 }
 function DropZone(props) {
-  const ctx = (0, import_react16.useContext)(dropZoneContext);
+  const ctx = (0, import_react15.useContext)(dropZoneContext);
   if ((ctx == null ? void 0 : ctx.mode) === "edit") {
     return /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(DropZoneEdit, __spreadValues({}, props));
   }
@@ -31562,15 +31425,12 @@ function DropZone(props) {
 }
 
 // components/Puck/index.tsx
-init_react_import();
-var import_react30 = require("react");
+var import_react29 = require("react");
 
 // lib/use-placeholder-style.ts
-init_react_import();
-var import_react17 = require("react");
+var import_react16 = require("react");
 
 // lib/get-frame.ts
-init_react_import();
 var getFrame = () => {
   let frame = document.querySelector("#preview-frame");
   if ((frame == null ? void 0 : frame.tagName) === "IFRAME") {
@@ -31582,7 +31442,7 @@ var getFrame = () => {
 // lib/use-placeholder-style.ts
 var usePlaceholderStyle = () => {
   const queryAttr = "data-rfd-drag-handle-draggable-id";
-  const [placeholderStyle, setPlaceholderStyle] = (0, import_react17.useState)();
+  const [placeholderStyle, setPlaceholderStyle] = (0, import_react16.useState)();
   const onDragStartOrUpdate = (draggedItem) => {
     var _a;
     const draggableId = draggedItem.draggableId;
@@ -31626,16 +31486,11 @@ var usePlaceholderStyle = () => {
   return { onDragStartOrUpdate, placeholderStyle };
 };
 
-// components/SidebarSection/index.tsx
-init_react_import();
-
-// css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/SidebarSection/styles.module.css#css-module
-init_react_import();
+// css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/SidebarSection/styles.module.css#css-module
 var styles_module_default12 = { "SidebarSection": "_SidebarSection_125qe_1", "SidebarSection-title": "_SidebarSection-title_125qe_12", "SidebarSection--noBorderTop": "_SidebarSection--noBorderTop_125qe_20", "SidebarSection-content": "_SidebarSection-content_125qe_24", "SidebarSection--noPadding": "_SidebarSection--noPadding_125qe_28", "SidebarSection-breadcrumbLabel": "_SidebarSection-breadcrumbLabel_125qe_41", "SidebarSection-breadcrumbs": "_SidebarSection-breadcrumbs_125qe_70", "SidebarSection-breadcrumb": "_SidebarSection-breadcrumb_125qe_41", "SidebarSection-heading": "_SidebarSection-heading_125qe_82", "SidebarSection-loadingOverlay": "_SidebarSection-loadingOverlay_125qe_86" };
 
 // lib/use-breadcrumbs.ts
-init_react_import();
-var import_react18 = require("react");
+var import_react17 = require("react");
 var convertPathDataToBreadcrumbs = (selectedItem, pathData, data) => {
   const id = selectedItem ? selectedItem == null ? void 0 : selectedItem.props.id : "";
   const currentPathData = pathData && id && pathData[id] ? __spreadValues({}, pathData[id]) : { label: "Page", path: [] };
@@ -31685,8 +31540,8 @@ var useBreadcrumbs = (renderCount) => {
     state: { data },
     selectedItem
   } = useAppContext();
-  const dzContext = (0, import_react18.useContext)(dropZoneContext);
-  return (0, import_react18.useMemo)(() => {
+  const dzContext = (0, import_react17.useContext)(dropZoneContext);
+  return (0, import_react17.useMemo)(() => {
     const breadcrumbs = convertPathDataToBreadcrumbs(
       selectedItem,
       dzContext == null ? void 0 : dzContext.pathData,
@@ -31740,14 +31595,7 @@ var SidebarSection = ({
   );
 };
 
-// reducer/index.ts
-init_react_import();
-
-// reducer/data.ts
-init_react_import();
-
 // lib/insert.ts
-init_react_import();
 var insert = (list, index, item) => {
   const result = Array.from(list);
   result.splice(index, 0, item);
@@ -31755,7 +31603,6 @@ var insert = (list, index, item) => {
 };
 
 // lib/remove.ts
-init_react_import();
 var remove = (list, index) => {
   const result = Array.from(list);
   result.splice(index, 1);
@@ -31763,7 +31610,6 @@ var remove = (list, index) => {
 };
 
 // lib/reduce-related-zones.ts
-init_react_import();
 var reduceRelatedZones = (item, data, fn) => {
   return __spreadProps(__spreadValues({}, data), {
     zones: Object.keys(data.zones || {}).reduce(
@@ -32024,7 +31870,6 @@ var reduceData = (data, action, config) => {
 };
 
 // reducer/state.ts
-init_react_import();
 var reduceUi = (ui, action) => {
   if (action.type === "setUi") {
     if (typeof action.ui === "object") {
@@ -32034,9 +31879,6 @@ var reduceUi = (ui, action) => {
   }
   return ui;
 };
-
-// reducer/actions.tsx
-init_react_import();
 
 // reducer/index.ts
 var storeInterceptor = (reducer, record) => {
@@ -32077,7 +31919,6 @@ function createReducer({
 }
 
 // lib/flush-zones.ts
-init_react_import();
 var flushZones = (appState) => {
   const containsZones = typeof appState.data.zones !== "undefined";
   if (containsZones) {
@@ -32094,14 +31935,9 @@ var flushZones = (appState) => {
 };
 
 // lib/use-resolved-data.ts
-init_react_import();
-var import_react19 = require("react");
-
-// lib/resolve-component-data.ts
-init_react_import();
+var import_react18 = require("react");
 
 // lib/get-changed.ts
-init_react_import();
 var getChanged = (newItem, oldItem) => {
   return newItem ? Object.keys(newItem.props || {}).reduce((acc, item) => {
     const newItemProps = (newItem == null ? void 0 : newItem.props) || {};
@@ -32159,7 +31995,6 @@ var resolveComponentData = (item, config, onResolveStart, onResolveEnd) => __asy
 });
 
 // lib/apply-dynamic-props.ts
-init_react_import();
 var applyDynamicProps = (data, dynamicProps, rootData) => {
   return __spreadProps(__spreadValues({}, data), {
     root: __spreadValues(__spreadValues({}, data.root), rootData ? rootData : {}),
@@ -32177,7 +32012,6 @@ var applyDynamicProps = (data, dynamicProps, rootData) => {
 };
 
 // lib/resolve-root-data.ts
-init_react_import();
 var cache2 = {};
 var resolveRootData = (data, config) => __async(void 0, null, function* () {
   var _a, _b, _c, _d, _e;
@@ -32204,13 +32038,13 @@ var resolveRootData = (data, config) => __async(void 0, null, function* () {
 
 // lib/use-resolved-data.ts
 var useResolvedData = (appState, config, dispatch) => {
-  const [{ resolverKey, newAppState }, setResolverState] = (0, import_react19.useState)({
+  const [{ resolverKey, newAppState }, setResolverState] = (0, import_react18.useState)({
     resolverKey: 0,
     newAppState: appState
   });
-  const [componentState, setComponentState] = (0, import_react19.useState)({});
+  const [componentState, setComponentState] = (0, import_react18.useState)({});
   const deferredSetStates = {};
-  const setComponentLoading = (0, import_react19.useCallback)(
+  const setComponentLoading = (0, import_react18.useCallback)(
     (id, loading, defer2 = 0) => {
       if (deferredSetStates[id]) {
         clearTimeout(deferredSetStates[id]);
@@ -32280,10 +32114,10 @@ var useResolvedData = (appState, config, dispatch) => {
     });
     yield Promise.all(promises);
   });
-  (0, import_react19.useEffect)(() => {
+  (0, import_react18.useEffect)(() => {
     runResolvers();
   }, [resolverKey]);
-  const resolveData = (0, import_react19.useCallback)((newAppState2 = appState) => {
+  const resolveData = (0, import_react18.useCallback)((newAppState2 = appState) => {
     setResolverState((curr) => ({
       resolverKey: curr.resolverKey + 1,
       newAppState: newAppState2
@@ -32295,11 +32129,7 @@ var useResolvedData = (appState, config, dispatch) => {
   };
 };
 
-// components/MenuBar/index.tsx
-init_react_import();
-
-// css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/MenuBar/styles.module.css#css-module
-init_react_import();
+// css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/MenuBar/styles.module.css#css-module
 var styles_module_default13 = { "MenuBar": "_MenuBar_8pf8c_1", "MenuBar--menuOpen": "_MenuBar--menuOpen_8pf8c_14", "MenuBar-inner": "_MenuBar-inner_8pf8c_29", "MenuBar-history": "_MenuBar-history_8pf8c_45" };
 
 // components/MenuBar/index.tsx
@@ -32358,19 +32188,14 @@ var MenuBar = ({
   );
 };
 
-// css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/Puck/styles.module.css#css-module
-init_react_import();
+// css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/Puck/styles.module.css#css-module
 var styles_module_default14 = { "Puck": "_Puck_1g88c_19", "Puck-portal": "_Puck-portal_1g88c_24", "PuckLayout": "_PuckLayout_1g88c_31", "PuckLayout-inner": "_PuckLayout-inner_1g88c_39", "PuckLayout--mounted": "_PuckLayout--mounted_1g88c_51", "PuckLayout--leftSideBarVisible": "_PuckLayout--leftSideBarVisible_1g88c_55", "PuckLayout--rightSideBarVisible": "_PuckLayout--rightSideBarVisible_1g88c_61", "PuckLayout-mounted": "_PuckLayout-mounted_1g88c_75", "PuckLayout-header": "_PuckLayout-header_1g88c_116", "PuckLayout-headerInner": "_PuckLayout-headerInner_1g88c_125", "PuckLayout-headerToggle": "_PuckLayout-headerToggle_1g88c_135", "PuckLayout-rightSideBarToggle": "_PuckLayout-rightSideBarToggle_1g88c_142", "PuckLayout-leftSideBarToggle": "_PuckLayout-leftSideBarToggle_1g88c_143", "PuckLayout-headerTitle": "_PuckLayout-headerTitle_1g88c_147", "PuckLayout-headerPath": "_PuckLayout-headerPath_1g88c_151", "PuckLayout-headerTools": "_PuckLayout-headerTools_1g88c_158", "PuckLayout-menuButton": "_PuckLayout-menuButton_1g88c_164", "PuckLayout--menuOpen": "_PuckLayout--menuOpen_1g88c_169", "PuckLayout-leftSideBar": "_PuckLayout-leftSideBar_1g88c_143", "PuckLayout-rightSideBar": "_PuckLayout-rightSideBar_1g88c_142" };
 
-// components/Puck/components/Fields/index.tsx
-init_react_import();
-
-// css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/Puck/components/Fields/styles.module.css#css-module
-init_react_import();
+// css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/Puck/components/Fields/styles.module.css#css-module
 var styles_module_default15 = { "PuckFields": "_PuckFields_jp3lw_1", "PuckFields--isLoading": "_PuckFields--isLoading_jp3lw_6", "PuckFields-loadingOverlay": "_PuckFields-loadingOverlay_jp3lw_10", "PuckFields-loadingOverlayInner": "_PuckFields-loadingOverlayInner_jp3lw_25" };
 
 // components/Puck/components/Fields/index.tsx
-var import_react20 = require("react");
+var import_react19 = require("react");
 var import_jsx_runtime26 = require("react/jsx-runtime");
 var getClassName20 = get_class_name_factory_default("PuckFields", styles_module_default15);
 var defaultPageFields = {
@@ -32389,14 +32214,14 @@ var useResolvedFields = () => {
   const componentConfig = selectedItem ? config.components[selectedItem.type] : null;
   const defaultFields = selectedItem ? componentConfig == null ? void 0 : componentConfig.fields : rootFields;
   const rootProps = data.root.props || data.root;
-  const [lastSelectedData, setLastSelectedData] = (0, import_react20.useState)(
+  const [lastSelectedData, setLastSelectedData] = (0, import_react19.useState)(
     {}
   );
-  const [resolvedFields, setResolvedFields] = (0, import_react20.useState)(defaultFields || {});
-  const [fieldsLoading, setFieldsLoading] = (0, import_react20.useState)(false);
+  const [resolvedFields, setResolvedFields] = (0, import_react19.useState)(defaultFields || {});
+  const [fieldsLoading, setFieldsLoading] = (0, import_react19.useState)(false);
   const defaultResolveFields = (_componentData, _params) => defaultFields;
   const componentData = selectedItem ? selectedItem : { props: rootProps, readOnly: data.root.readOnly };
-  const resolveFields = (0, import_react20.useCallback)(
+  const resolveFields = (0, import_react19.useCallback)(
     (..._0) => __async(void 0, [..._0], function* (fields = {}) {
       var _a2, _b, _c;
       const lastData = ((_a2 = lastSelectedData.props) == null ? void 0 : _a2.id) === componentData.props.id ? lastSelectedData : {};
@@ -32432,7 +32257,7 @@ var useResolvedFields = () => {
     }),
     [data, config, componentData, selectedItem, resolvedFields, state]
   );
-  (0, import_react20.useEffect)(() => {
+  (0, import_react19.useEffect)(() => {
     setFieldsLoading(true);
     resolveFields(defaultFields).then((fields) => {
       setResolvedFields(fields || {});
@@ -32458,7 +32283,7 @@ var Fields = () => {
   const componentResolving = selectedItem ? (_a = componentState[selectedItem == null ? void 0 : selectedItem.props.id]) == null ? void 0 : _a.loading : (_b = componentState["puck-root"]) == null ? void 0 : _b.loading;
   const isLoading = fieldsResolving || componentResolving;
   const rootProps = data.root.props || data.root;
-  const Wrapper = (0, import_react20.useMemo)(() => overrides.fields || DefaultFields, [overrides]);
+  const Wrapper = (0, import_react19.useMemo)(() => overrides.fields || DefaultFields, [overrides]);
   return /* @__PURE__ */ (0, import_jsx_runtime26.jsxs)(
     "form",
     {
@@ -32569,18 +32394,10 @@ var Fields = () => {
   );
 };
 
-// components/Puck/components/Components/index.tsx
-init_react_import();
-
 // lib/use-component-list.tsx
-init_react_import();
-var import_react21 = require("react");
+var import_react20 = require("react");
 
-// components/ComponentList/index.tsx
-init_react_import();
-
-// css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/ComponentList/styles.module.css#css-module
-init_react_import();
+// css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/ComponentList/styles.module.css#css-module
 var styles_module_default16 = { "ComponentList": "_ComponentList_odh9d_1", "ComponentList--isExpanded": "_ComponentList--isExpanded_odh9d_5", "ComponentList-content": "_ComponentList-content_odh9d_9", "ComponentList-title": "_ComponentList-title_odh9d_17", "ComponentList-titleIcon": "_ComponentList-titleIcon_odh9d_53" };
 
 // components/ComponentList/index.tsx
@@ -32639,8 +32456,8 @@ ComponentList.Item = ComponentListItem;
 // lib/use-component-list.tsx
 var import_jsx_runtime28 = require("react/jsx-runtime");
 var useComponentList = (config, ui) => {
-  const [componentList, setComponentList] = (0, import_react21.useState)();
-  (0, import_react21.useEffect)(() => {
+  const [componentList, setComponentList] = (0, import_react20.useState)();
+  (0, import_react20.useEffect)(() => {
     var _a, _b, _c;
     if (Object.keys(ui.componentList).length > 0) {
       const matchedComponents = [];
@@ -32709,22 +32526,20 @@ var useComponentList = (config, ui) => {
 };
 
 // components/Puck/components/Components/index.tsx
-var import_react22 = require("react");
+var import_react21 = require("react");
 var import_jsx_runtime29 = require("react/jsx-runtime");
 var Components = () => {
   const { config, state, overrides } = useAppContext();
   const componentList = useComponentList(config, state.ui);
-  const Wrapper = (0, import_react22.useMemo)(() => overrides.components || "div", [overrides]);
+  const Wrapper = (0, import_react21.useMemo)(() => overrides.components || "div", [overrides]);
   return /* @__PURE__ */ (0, import_jsx_runtime29.jsx)(Wrapper, { children: componentList ? componentList : /* @__PURE__ */ (0, import_jsx_runtime29.jsx)(ComponentList, { id: "all" }) });
 };
 
 // components/Puck/components/Preview/index.tsx
-init_react_import();
-var import_react24 = require("react");
+var import_react23 = require("react");
 
 // components/AutoFrame/index.tsx
-init_react_import();
-var import_react23 = __toESM(require("react"));
+var import_react22 = __toESM(require("react"));
 var import_react_frame_component = __toESM(require("react-frame-component"));
 var import_object_hash = __toESM(require("object-hash"));
 var import_jsx_runtime30 = require("react/jsx-runtime");
@@ -32762,7 +32577,7 @@ var CopyHostStyles = ({
   onStylesLoaded = () => null
 }) => {
   const { document: doc, window: win } = (0, import_react_frame_component.useFrame)();
-  (0, import_react23.useEffect)(() => {
+  (0, import_react22.useEffect)(() => {
     if (!win || !doc) {
       return () => {
       };
@@ -32920,7 +32735,7 @@ var CopyHostStyles = ({
   }, []);
   return /* @__PURE__ */ (0, import_jsx_runtime30.jsx)(import_jsx_runtime30.Fragment, { children });
 };
-var AutoFrameComponent = import_react23.default.forwardRef(
+var AutoFrameComponent = import_react22.default.forwardRef(
   function(_a, ref) {
     var _b = _a, { children, debug, onStylesLoaded } = _b, props = __objRest(_b, ["children", "debug", "onStylesLoaded"]);
     return /* @__PURE__ */ (0, import_jsx_runtime30.jsx)(import_react_frame_component.default, __spreadProps(__spreadValues({}, props), { ref, children: /* @__PURE__ */ (0, import_jsx_runtime30.jsx)(CopyHostStyles, { debug, onStylesLoaded, children }) }));
@@ -32929,8 +32744,7 @@ var AutoFrameComponent = import_react23.default.forwardRef(
 AutoFrameComponent.displayName = "AutoFrameComponent";
 var AutoFrame_default = AutoFrameComponent;
 
-// css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/Puck/components/Preview/styles.module.css#css-module
-init_react_import();
+// css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/Puck/components/Preview/styles.module.css#css-module
 var styles_module_default17 = { "PuckPreview": "_PuckPreview_rxwlr_1", "PuckPreview-frame": "_PuckPreview-frame_rxwlr_5" };
 
 // components/Puck/components/Preview/index.tsx
@@ -32938,7 +32752,7 @@ var import_jsx_runtime31 = require("react/jsx-runtime");
 var getClassName22 = get_class_name_factory_default("PuckPreview", styles_module_default17);
 var Preview = ({ id = "puck-preview" }) => {
   const { config, dispatch, state, setStatus, iframe } = useAppContext();
-  const Page = (0, import_react24.useCallback)(
+  const Page = (0, import_react23.useCallback)(
     (pageProps) => {
       var _a, _b;
       return ((_a = config.root) == null ? void 0 : _a.render) ? (_b = config.root) == null ? void 0 : _b.render(__spreadProps(__spreadValues({
@@ -32952,7 +32766,7 @@ var Preview = ({ id = "puck-preview" }) => {
     [config.root]
   );
   const rootProps = state.data.root.props || state.data.root;
-  const ref = (0, import_react24.useRef)(null);
+  const ref = (0, import_react23.useRef)(null);
   return /* @__PURE__ */ (0, import_jsx_runtime31.jsx)(
     "div",
     {
@@ -32978,14 +32792,7 @@ var Preview = ({ id = "puck-preview" }) => {
   );
 };
 
-// components/Puck/components/Outline/index.tsx
-init_react_import();
-
-// lib/area-contains-zones.ts
-init_react_import();
-
 // lib/find-zones-for-area.ts
-init_react_import();
 var findZonesForArea = (data, area) => {
   const { zones = {} } = data;
   const result = Object.keys(zones).filter(
@@ -33002,15 +32809,10 @@ var areaContainsZones = (data, area) => {
   return zones.length > 0;
 };
 
-// components/LayerTree/index.tsx
-init_react_import();
-
-// css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/LayerTree/styles.module.css#css-module
-init_react_import();
+// css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/LayerTree/styles.module.css#css-module
 var styles_module_default18 = { "LayerTree": "_LayerTree_1pgw8_1", "LayerTree-zoneTitle": "_LayerTree-zoneTitle_1pgw8_11", "LayerTree-helper": "_LayerTree-helper_1pgw8_17", "Layer": "_Layer_1pgw8_1", "Layer-inner": "_Layer-inner_1pgw8_29", "Layer--containsZone": "_Layer--containsZone_1pgw8_35", "Layer-clickable": "_Layer-clickable_1pgw8_39", "Layer--isSelected": "_Layer--isSelected_1pgw8_61", "Layer-chevron": "_Layer-chevron_1pgw8_77", "Layer--childIsSelected": "_Layer--childIsSelected_1pgw8_78", "Layer-zones": "_Layer-zones_1pgw8_82", "Layer-title": "_Layer-title_1pgw8_96", "Layer-name": "_Layer-name_1pgw8_105", "Layer-icon": "_Layer-icon_1pgw8_111", "Layer-zoneIcon": "_Layer-zoneIcon_1pgw8_116" };
 
 // lib/scroll-into-view.ts
-init_react_import();
 var scrollIntoView = (el) => {
   const oldStyle = __spreadValues({}, el.style);
   el.style.scrollMargin = "256px";
@@ -33021,10 +32823,9 @@ var scrollIntoView = (el) => {
 };
 
 // components/LayerTree/index.tsx
-var import_react25 = require("react");
+var import_react24 = require("react");
 
 // lib/is-child-of-zone.ts
-init_react_import();
 var isChildOfZone = (item, maybeChild, ctx) => {
   var _a;
   const { data, pathData = {} } = ctx || {};
@@ -33048,7 +32849,7 @@ var LayerTree = ({
   label
 }) => {
   const zones = data.zones || {};
-  const ctx = (0, import_react25.useContext)(dropZoneContext);
+  const ctx = (0, import_react24.useContext)(dropZoneContext);
   return /* @__PURE__ */ (0, import_jsx_runtime32.jsxs)(import_jsx_runtime32.Fragment, { children: [
     label && /* @__PURE__ */ (0, import_jsx_runtime32.jsxs)("div", { className: getClassName23("zoneTitle"), children: [
       /* @__PURE__ */ (0, import_jsx_runtime32.jsx)("div", { className: getClassName23("zoneIcon"), children: /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(Layers, { size: "16" }) }),
@@ -33153,13 +32954,13 @@ var LayerTree = ({
 };
 
 // components/Puck/components/Outline/index.tsx
-var import_react26 = require("react");
+var import_react25 = require("react");
 var import_jsx_runtime33 = require("react/jsx-runtime");
 var Outline = () => {
   const { dispatch, state, overrides, config } = useAppContext();
   const { data, ui } = state;
   const { itemSelector } = ui;
-  const setItemSelector = (0, import_react26.useCallback)(
+  const setItemSelector = (0, import_react25.useCallback)(
     (newItemSelector) => {
       dispatch({
         type: "setUi",
@@ -33168,7 +32969,7 @@ var Outline = () => {
     },
     []
   );
-  const Wrapper = (0, import_react26.useMemo)(() => overrides.outline || "div", [overrides]);
+  const Wrapper = (0, import_react25.useMemo)(() => overrides.outline || "div", [overrides]);
   return /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(Wrapper, { children: /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(dropZoneContext.Consumer, { children: (ctx) => /* @__PURE__ */ (0, import_jsx_runtime33.jsxs)(import_jsx_runtime33.Fragment, { children: [
     (ctx == null ? void 0 : ctx.activeZones) && (ctx == null ? void 0 : ctx.activeZones[rootDroppableId]) && /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(
       LayerTree,
@@ -33202,7 +33003,6 @@ var Outline = () => {
 };
 
 // lib/load-overrides.ts
-init_react_import();
 var loadOverrides = ({
   overrides,
   plugins
@@ -33233,7 +33033,6 @@ var loadOverrides = ({
 };
 
 // lib/use-puck-history.ts
-init_react_import();
 var import_react_hotkeys_hook = require("react-hotkeys-hook");
 function usePuckHistory({
   dispatch,
@@ -33267,16 +33066,15 @@ function usePuckHistory({
 }
 
 // lib/use-history-store.ts
-init_react_import();
-var import_react27 = require("react");
+var import_react26 = require("react");
 var import_use_debounce3 = require("use-debounce");
 var EMPTY_HISTORY_INDEX = -1;
 function useHistoryStore(initialHistories) {
   var _a, _b;
-  const [histories, setHistories] = (0, import_react27.useState)(
+  const [histories, setHistories] = (0, import_react26.useState)(
     (_a = initialHistories == null ? void 0 : initialHistories.histories) != null ? _a : []
   );
-  const [index, setIndex] = (0, import_react27.useState)(
+  const [index, setIndex] = (0, import_react26.useState)(
     (_b = initialHistories == null ? void 0 : initialHistories.index) != null ? _b : EMPTY_HISTORY_INDEX
   );
   const hasPast = index > EMPTY_HISTORY_INDEX;
@@ -33315,14 +33113,7 @@ function useHistoryStore(initialHistories) {
   };
 }
 
-// components/Puck/components/Canvas/index.tsx
-init_react_import();
-
-// ../../node_modules/css-box-model/dist/css-box-model.esm.js
-init_react_import();
-
-// ../../node_modules/tiny-invariant/dist/esm/tiny-invariant.js
-init_react_import();
+// node_modules/tiny-invariant/dist/esm/tiny-invariant.js
 var isProduction = process.env.NODE_ENV === "production";
 var prefix = "Invariant failed";
 function invariant(condition, message) {
@@ -33337,7 +33128,7 @@ function invariant(condition, message) {
   throw new Error(value);
 }
 
-// ../../node_modules/css-box-model/dist/css-box-model.esm.js
+// node_modules/css-box-model/dist/css-box-model.esm.js
 var getRect = function getRect2(_ref) {
   var top = _ref.top, right = _ref.right, bottom = _ref.bottom, left = _ref.left;
   var width = right - left;
@@ -33438,14 +33229,12 @@ var getBox = function getBox2(el) {
 };
 
 // components/Puck/components/Canvas/index.tsx
-var import_react29 = require("react");
-
-// components/ViewportControls/index.tsx
-init_react_import();
 var import_react28 = require("react");
 
-// css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/ViewportControls/styles.module.css#css-module
-init_react_import();
+// components/ViewportControls/index.tsx
+var import_react27 = require("react");
+
+// css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/ViewportControls/styles.module.css#css-module
 var styles_module_default19 = { "ViewportControls": "_ViewportControls_g1wgg_1", "ViewportControls-divider": "_ViewportControls-divider_g1wgg_15", "ViewportControls-zoomSelect": "_ViewportControls-zoomSelect_g1wgg_21", "ViewportButton--isActive": "_ViewportButton--isActive_g1wgg_34", "ViewportButton-inner": "_ViewportButton-inner_g1wgg_34" };
 
 // components/ViewportControls/index.tsx
@@ -33465,8 +33254,8 @@ var ViewportButton = ({
   onClick
 }) => {
   const { state } = useAppContext();
-  const [isActive, setIsActive] = (0, import_react28.useState)(false);
-  (0, import_react28.useEffect)(() => {
+  const [isActive, setIsActive] = (0, import_react27.useState)(false);
+  (0, import_react27.useEffect)(() => {
     setIsActive(width === state.ui.viewports.current.width);
   }, [width, state.ui.viewports.current.width]);
   return /* @__PURE__ */ (0, import_jsx_runtime34.jsx)("span", { className: getClassNameButton({ isActive }), children: /* @__PURE__ */ (0, import_jsx_runtime34.jsx)(
@@ -33502,7 +33291,7 @@ var ViewportControls = ({
   const defaultsContainAutoZoom = defaultZoomOptions.find(
     (option) => option.value === autoZoom
   );
-  const zoomOptions = (0, import_react28.useMemo)(
+  const zoomOptions = (0, import_react27.useMemo)(
     () => [
       ...defaultZoomOptions,
       ...defaultsContainAutoZoom ? [] : [
@@ -33583,12 +33372,10 @@ var ViewportControls = ({
   ] });
 };
 
-// css-module:/Users/hnanh/Downloads/puck-main/packages/core/components/Puck/components/Canvas/styles.module.css#css-module
-init_react_import();
+// css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/Puck/components/Canvas/styles.module.css#css-module
 var styles_module_default20 = { "PuckCanvas": "_PuckCanvas_6zd4y_1", "PuckCanvas-controls": "_PuckCanvas-controls_6zd4y_16", "PuckCanvas-inner": "_PuckCanvas-inner_6zd4y_21", "PuckCanvas-root": "_PuckCanvas-root_6zd4y_32", "PuckCanvas--ready": "_PuckCanvas--ready_6zd4y_56" };
 
 // lib/get-zoom-config.ts
-init_react_import();
 var RESET_ZOOM_SMALLER_THAN_FRAME = true;
 var getZoomConfig = (uiViewport, frame, zoom) => {
   const box = getBox(frame);
@@ -33625,17 +33412,17 @@ var Canvas = () => {
   const { status, iframe } = useAppContext();
   const { dispatch, state, overrides, setUi, zoomConfig, setZoomConfig } = useAppContext();
   const { ui } = state;
-  const frameRef = (0, import_react29.useRef)(null);
-  const [showTransition, setShowTransition] = (0, import_react29.useState)(false);
-  const defaultRender = (0, import_react29.useMemo)(() => {
+  const frameRef = (0, import_react28.useRef)(null);
+  const [showTransition, setShowTransition] = (0, import_react28.useState)(false);
+  const defaultRender = (0, import_react28.useMemo)(() => {
     const PuckDefault = ({ children }) => /* @__PURE__ */ (0, import_jsx_runtime35.jsx)(import_jsx_runtime35.Fragment, { children });
     return PuckDefault;
   }, []);
-  const CustomPreview = (0, import_react29.useMemo)(
+  const CustomPreview = (0, import_react28.useMemo)(
     () => overrides.preview || defaultRender,
     [overrides]
   );
-  const getFrameDimensions = (0, import_react29.useCallback)(() => {
+  const getFrameDimensions = (0, import_react28.useCallback)(() => {
     if (frameRef.current) {
       const frame = frameRef.current;
       const box = getBox(frame);
@@ -33643,7 +33430,7 @@ var Canvas = () => {
     }
     return { width: 0, height: 0 };
   }, [frameRef]);
-  const resetAutoZoom = (0, import_react29.useCallback)(
+  const resetAutoZoom = (0, import_react28.useCallback)(
     (ui2 = state.ui) => {
       if (frameRef.current) {
         setZoomConfig(
@@ -33653,11 +33440,11 @@ var Canvas = () => {
     },
     [frameRef, zoomConfig, state.ui]
   );
-  (0, import_react29.useEffect)(() => {
+  (0, import_react28.useEffect)(() => {
     setShowTransition(false);
     resetAutoZoom();
   }, [frameRef, ui.leftSideBarVisible, ui.rightSideBarVisible]);
-  (0, import_react29.useEffect)(() => {
+  (0, import_react28.useEffect)(() => {
     const { height: frameHeight } = getFrameDimensions();
     if (ui.viewports.current.height === "auto") {
       setZoomConfig(__spreadProps(__spreadValues({}, zoomConfig), {
@@ -33665,7 +33452,7 @@ var Canvas = () => {
       }));
     }
   }, [zoomConfig.zoom]);
-  (0, import_react29.useEffect)(() => {
+  (0, import_react28.useEffect)(() => {
     const observer = new ResizeObserver(() => {
       setShowTransition(false);
       resetAutoZoom();
@@ -33760,10 +33547,10 @@ function Puck({
 }) {
   var _a;
   const historyStore = useHistoryStore(initialHistories);
-  const [reducer] = (0, import_react30.useState)(
+  const [reducer] = (0, import_react29.useState)(
     () => createReducer({ config, record: historyStore.record })
   );
-  const [initialAppState] = (0, import_react30.useState)(() => {
+  const [initialAppState] = (0, import_react29.useState)(() => {
     var _a2, _b, _c, _d, _e, _f, _g;
     const initial = __spreadValues(__spreadValues({}, defaultAppState.ui), initialUi);
     let clientUiState = {};
@@ -33821,7 +33608,7 @@ function Puck({
       })
     });
   });
-  const [appState, dispatch] = (0, import_react30.useReducer)(
+  const [appState, dispatch] = (0, import_react29.useReducer)(
     reducer,
     flushZones(initialAppState)
   );
@@ -33832,9 +33619,9 @@ function Puck({
     config,
     dispatch
   );
-  const [menuOpen, setMenuOpen] = (0, import_react30.useState)(false);
+  const [menuOpen, setMenuOpen] = (0, import_react29.useState)(false);
   const { itemSelector, leftSideBarVisible, rightSideBarVisible } = ui;
-  const setItemSelector = (0, import_react30.useCallback)(
+  const setItemSelector = (0, import_react29.useCallback)(
     (newItemSelector) => {
       if (newItemSelector === itemSelector)
         return;
@@ -33847,14 +33634,14 @@ function Puck({
     [itemSelector]
   );
   const selectedItem = itemSelector ? getItem(itemSelector, data) : null;
-  (0, import_react30.useEffect)(() => {
+  (0, import_react29.useEffect)(() => {
     if (onChange)
       onChange(data);
   }, [data]);
   const { onDragStartOrUpdate, placeholderStyle } = usePlaceholderStyle();
-  const [draggedItem, setDraggedItem] = (0, import_react30.useState)();
+  const [draggedItem, setDraggedItem] = (0, import_react29.useState)();
   const rootProps = data.root.props || data.root;
-  const toggleSidebars = (0, import_react30.useCallback)(
+  const toggleSidebars = (0, import_react29.useCallback)(
     (sidebar) => {
       const widerViewport = window.matchMedia("(min-width: 638px)").matches;
       const sideBarVisible = sidebar === "left" ? leftSideBarVisible : rightSideBarVisible;
@@ -33868,7 +33655,7 @@ function Puck({
     },
     [dispatch, leftSideBarVisible, rightSideBarVisible]
   );
-  (0, import_react30.useEffect)(() => {
+  (0, import_react29.useEffect)(() => {
     if (!window.matchMedia("(min-width: 638px)").matches) {
       dispatch({
         type: "setUi",
@@ -33891,11 +33678,11 @@ function Puck({
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  const defaultRender = (0, import_react30.useMemo)(() => {
+  const defaultRender = (0, import_react29.useMemo)(() => {
     const PuckDefault = ({ children: children2 }) => /* @__PURE__ */ (0, import_jsx_runtime36.jsx)(import_jsx_runtime36.Fragment, { children: children2 });
     return PuckDefault;
   }, []);
-  const defaultHeaderRender = (0, import_react30.useMemo)(() => {
+  const defaultHeaderRender = (0, import_react29.useMemo)(() => {
     if (renderHeader) {
       console.warn(
         "`renderHeader` is deprecated. Please use `overrides.header` and the `usePuck` hook instead"
@@ -33909,7 +33696,7 @@ function Puck({
     }
     return defaultRender;
   }, [renderHeader]);
-  const defaultHeaderActionsRender = (0, import_react30.useMemo)(() => {
+  const defaultHeaderActionsRender = (0, import_react29.useMemo)(() => {
     if (renderHeaderActions) {
       console.warn(
         "`renderHeaderActions` is deprecated. Please use `overrides.headerActions` and the `usePuck` hook instead."
@@ -33922,23 +33709,23 @@ function Puck({
     }
     return defaultRender;
   }, [renderHeader]);
-  const loadedOverrides = (0, import_react30.useMemo)(() => {
+  const loadedOverrides = (0, import_react29.useMemo)(() => {
     return loadOverrides({ overrides, plugins });
   }, [plugins]);
-  const CustomPuck = (0, import_react30.useMemo)(
+  const CustomPuck = (0, import_react29.useMemo)(
     () => loadedOverrides.puck || defaultRender,
     [loadedOverrides]
   );
-  const CustomHeader = (0, import_react30.useMemo)(
+  const CustomHeader = (0, import_react29.useMemo)(
     () => loadedOverrides.header || defaultHeaderRender,
     [loadedOverrides]
   );
-  const CustomHeaderActions = (0, import_react30.useMemo)(
+  const CustomHeaderActions = (0, import_react29.useMemo)(
     () => loadedOverrides.headerActions || defaultHeaderActionsRender,
     [loadedOverrides]
   );
-  const [mounted, setMounted] = (0, import_react30.useState)(false);
-  (0, import_react30.useEffect)(() => {
+  const [mounted, setMounted] = (0, import_react29.useState)(false);
+  (0, import_react29.useEffect)(() => {
     setMounted(true);
   }, []);
   const selectedComponentConfig = selectedItem && config.components[selectedItem.type];
@@ -34173,7 +33960,6 @@ Puck.Outline = Outline;
 Puck.Preview = Preview;
 
 // components/Render/index.tsx
-init_react_import();
 var import_jsx_runtime37 = require("react/jsx-runtime");
 function Render({
   config,
@@ -34205,7 +33991,6 @@ function Render({
 }
 
 // lib/migrate.ts
-init_react_import();
 var migrations = [
   // Migrate root to root.props
   (data) => {
@@ -34227,11 +34012,7 @@ function migrate(data) {
   return migrations == null ? void 0 : migrations.reduce((acc, migration) => migration(acc), data);
 }
 
-// lib/transform-props.ts
-init_react_import();
-
 // lib/default-data.ts
-init_react_import();
 var defaultData = (data) => __spreadProps(__spreadValues({}, data), {
   root: data.root || {},
   content: data.content || []
@@ -34271,7 +34052,6 @@ function transformProps(data, propTransforms) {
 }
 
 // lib/resolve-all-data.ts
-init_react_import();
 function resolveAllData(data, config, onResolveStart, onResolveEnd) {
   return __async(this, null, function* () {
     const defaultedData = defaultData(data);
@@ -34302,7 +34082,6 @@ function resolveAllData(data, config, onResolveStart, onResolveEnd) {
 }
 
 // lib/use-puck.ts
-init_react_import();
 var usePuck = () => {
   const {
     state: appState,
