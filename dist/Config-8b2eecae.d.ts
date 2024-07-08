@@ -10,6 +10,7 @@ type DropZoneProps = {
     allow?: string[];
     disallow?: string[];
     style?: CSSProperties;
+    isDisabled?: boolean;
 };
 
 type iconTypes = "Smartphone" | "Monitor" | "Tablet";

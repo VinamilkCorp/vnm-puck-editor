@@ -31246,7 +31246,7 @@ var DropZoneProvider = ({
 // components/DropZone/index.tsx
 var import_jsx_runtime23 = require("react/jsx-runtime");
 var getClassName17 = get_class_name_factory_default("DropZone", styles_module_default11);
-function DropZoneEdit({ zone, allow, disallow, style }) {
+function DropZoneEdit({ zone, allow, disallow, style, isDisabled }) {
   var _a;
   const appContext2 = useAppContext();
   const ctx = (0, import_react16.useContext)(dropZoneContext);
@@ -31350,7 +31350,7 @@ function DropZoneEdit({ zone, allow, disallow, style }) {
         hoveringOverArea,
         draggingNewComponent,
         isDestination: draggedDestinationId === zoneCompound,
-        isDisabled: !isEnabled,
+        isDisabled: !isEnabled || isDisabled,
         isAreaSelected,
         hasChildren: content.length > 0
       }),
@@ -31362,7 +31362,7 @@ function DropZoneEdit({ zone, allow, disallow, style }) {
         {
           droppableId: zoneCompound,
           direction: "vertical",
-          isDropDisabled: !isEnabled,
+          isDropDisabled: !isEnabled || isDisabled,
           children: (provided, snapshot) => {
             return /* @__PURE__ */ (0, import_jsx_runtime23.jsxs)(
               "div",

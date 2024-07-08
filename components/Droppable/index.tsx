@@ -31,5 +31,5 @@ export const Droppable = (props: DroppableProps) => {
 
   const El = status !== "LOADING" ? DndDroppable : DefaultDroppable;
 
-  return <El {...props} />;
+  return <El {...props}/>;
 };

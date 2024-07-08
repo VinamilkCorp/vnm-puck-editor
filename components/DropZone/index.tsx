@@ -16,7 +16,7 @@ const getClassName = getClassNameFactory("DropZone", styles);
 
 export { DropZoneProvider, dropZoneContext } from "./context";
 
-function DropZoneEdit({ zone, allow, disallow, style }: DropZoneProps) {
+function DropZoneEdit({ zone, allow, disallow, style, isDisabled }: DropZoneProps) {
   const appContext = useAppContext();
   const ctx = useContext(dropZoneContext);
 
@@ -169,7 +169,7 @@ function DropZoneEdit({ zone, allow, disallow, style }: DropZoneProps) {
         hoveringOverArea,
         draggingNewComponent,
         isDestination: draggedDestinationId === zoneCompound,
-        isDisabled: !isEnabled,
+        isDisabled: !isEnabled || isDisabled,
         isAreaSelected,
         hasChildren: content.length > 0,
       })}
@@ -180,7 +180,7 @@ function DropZoneEdit({ zone, allow, disallow, style }: DropZoneProps) {
       <Droppable
         droppableId={zoneCompound}
         direction={"vertical"}
-        isDropDisabled={!isEnabled}
+        isDropDisabled={!isEnabled || isDisabled}
       >
         {(provided, snapshot) => {
           return (
