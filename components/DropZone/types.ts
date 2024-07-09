@@ -5,5 +5,6 @@ export type DropZoneProps = {
   allow?: string[];
   disallow?: string[];
   style?: CSSProperties;
-  isDisabled?:boolean
+  isDisabled?: boolean;
+  isDisableChild?: boolean;
 };

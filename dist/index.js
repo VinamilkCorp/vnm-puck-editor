@@ -31115,7 +31115,8 @@ function DropZoneEdit({
   allow,
   disallow,
   style,
-  isDisabled
+  isDisabled,
+  isDisableChild
 }) {
   var _a;
   const appContext2 = useAppContext();
@@ -31250,7 +31251,6 @@ function DropZoneEdit({
                 children: [
                   content.map((item, i) => {
                     var _a2, _b, _c;
-                    console.log(i, "iiiiii");
                     const componentId = item.props.id;
                     const puckProps = {
                       renderDropZone: DropZone,
@@ -31352,7 +31352,12 @@ function DropZoneEdit({
                                     pointerEvents: userIsDragging && draggingNewComponent ? "all" : void 0
                                   },
                                   isDragDisabled: isDisabled,
-                                  children: /* @__PURE__ */ (0, import_jsx_runtime23.jsx)("div", { className: getClassName17("renderWrapper"), children: /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(Render2, __spreadValues({}, defaultedProps)) })
+                                  children: /* @__PURE__ */ (0, import_jsx_runtime23.jsx)("div", { className: getClassName17("renderWrapper"), children: /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(
+                                    Render2,
+                                    __spreadProps(__spreadValues({}, defaultedProps), {
+                                      isDisable: isDisableChild
+                                    })
+                                  ) })
                                 }
                               )
                             }

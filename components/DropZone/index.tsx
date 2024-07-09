@@ -22,6 +22,7 @@ function DropZoneEdit({
   disallow,
   style,
   isDisabled,
+  isDisableChild,
 }: DropZoneProps) {
   const appContext = useAppContext();
   const ctx = useContext(dropZoneContext);
@@ -204,7 +205,6 @@ function DropZoneEdit({
               }}
             >
               {content.map((item, i) => {
-                console.log(i, "iiiiii");
                 const componentId = item.props.id;
 
                 const puckProps: PuckContext = {
@@ -343,7 +343,10 @@ function DropZoneEdit({
                         isDragDisabled={isDisabled}
                       >
                         <div className={getClassName("renderWrapper")}>
-                          <Render {...defaultedProps} />
+                          <Render
+                            {...defaultedProps}
+                            isDisable={isDisableChild}
+                          />
                         </div>
                       </DraggableComponent>
                     </DropZoneProvider>
