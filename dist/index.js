@@ -30918,6 +30918,7 @@ var DraggableComponent = ({
       setDisableSecondaryAnimation(true);
     }
   }, []);
+  console.log(isDragDisabled, "isDragDisabled");
   return /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(
     El,
     {
@@ -31109,7 +31110,13 @@ var DropZoneProvider = ({
 // components/DropZone/index.tsx
 var import_jsx_runtime23 = require("react/jsx-runtime");
 var getClassName17 = get_class_name_factory_default("DropZone", styles_module_default11);
-function DropZoneEdit({ zone, allow, disallow, style, isDisabled }) {
+function DropZoneEdit({
+  zone,
+  allow,
+  disallow,
+  style,
+  isDisabled
+}) {
   var _a;
   const appContext2 = useAppContext();
   const ctx = (0, import_react15.useContext)(dropZoneContext);
@@ -31342,6 +31349,7 @@ function DropZoneEdit({ zone, allow, disallow, style, isDisabled }) {
                                   style: {
                                     pointerEvents: userIsDragging && draggingNewComponent ? "all" : void 0
                                   },
+                                  isDragDisabled: isDisabled,
                                   children: /* @__PURE__ */ (0, import_jsx_runtime23.jsx)("div", { className: getClassName17("renderWrapper"), children: /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(Render2, __spreadValues({}, defaultedProps)) })
                                 }
                               )

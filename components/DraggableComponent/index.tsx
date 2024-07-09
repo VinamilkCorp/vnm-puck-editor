@@ -85,6 +85,8 @@ export const DraggableComponent = ({
     }
   }, []);
 
+  console.log(isDragDisabled, "isDragDisabled");
+
   return (
     <El
       key={id}
