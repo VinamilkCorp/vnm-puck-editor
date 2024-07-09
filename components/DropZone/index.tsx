@@ -16,7 +16,13 @@ const getClassName = getClassNameFactory("DropZone", styles);
 
 export { DropZoneProvider, dropZoneContext } from "./context";
 
-function DropZoneEdit({ zone, allow, disallow, style, isDisabled }: DropZoneProps) {
+function DropZoneEdit({
+  zone,
+  allow,
+  disallow,
+  style,
+  isDisabled,
+}: DropZoneProps) {
   const appContext = useAppContext();
   const ctx = useContext(dropZoneContext);
 
@@ -332,6 +338,7 @@ function DropZoneEdit({ zone, allow, disallow, style, isDisabled }: DropZoneProp
                               ? "all"
                               : undefined,
                         }}
+                        isDragDisabled={isDisabled}
                       >
                         <div className={getClassName("renderWrapper")}>
                           <Render {...defaultedProps} />
