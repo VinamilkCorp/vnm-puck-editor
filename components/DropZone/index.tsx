@@ -189,6 +189,7 @@ function DropZoneEdit({
         isDropDisabled={!isEnabled || isDisabled}
       >
         {(provided, snapshot) => {
+          console.log(content, "content");
           return (
             <div
               {...(provided || { droppableProps: {} }).droppableProps}
@@ -203,6 +204,7 @@ function DropZoneEdit({
               }}
             >
               {content.map((item, i) => {
+                console.log(i, "iiiiii");
                 const componentId = item.props.id;
 
                 const puckProps: PuckContext = {

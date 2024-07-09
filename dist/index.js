@@ -31234,6 +31234,7 @@ function DropZoneEdit({
           direction: "vertical",
           isDropDisabled: !isEnabled || isDisabled,
           children: (provided, snapshot) => {
+            console.log(content, "content");
             return /* @__PURE__ */ (0, import_jsx_runtime23.jsxs)(
               "div",
               __spreadProps(__spreadValues({}, (provided || { droppableProps: {} }).droppableProps), {
@@ -31249,6 +31250,7 @@ function DropZoneEdit({
                 children: [
                   content.map((item, i) => {
                     var _a2, _b, _c;
+                    console.log(i, "iiiiii");
                     const componentId = item.props.id;
                     const puckProps = {
                       renderDropZone: DropZone,
