@@ -190,7 +190,6 @@ function DropZoneEdit({
         isDropDisabled={!isEnabled || isDisabled}
       >
         {(provided, snapshot) => {
-          console.log(content, "content");
           return (
             <div
               {...(provided || { droppableProps: {} }).droppableProps}

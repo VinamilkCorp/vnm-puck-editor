@@ -30918,7 +30918,6 @@ var DraggableComponent = ({
       setDisableSecondaryAnimation(true);
     }
   }, []);
-  console.log(isDragDisabled, "isDragDisabled");
   return /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(
     El,
     {
@@ -31235,7 +31234,6 @@ function DropZoneEdit({
           direction: "vertical",
           isDropDisabled: !isEnabled || isDisabled,
           children: (provided, snapshot) => {
-            console.log(content, "content");
             return /* @__PURE__ */ (0, import_jsx_runtime23.jsxs)(
               "div",
               __spreadProps(__spreadValues({}, (provided || { droppableProps: {} }).droppableProps), {
