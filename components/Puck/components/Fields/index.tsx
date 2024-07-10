@@ -73,49 +73,46 @@ const useResolvedFields = (): [FieldsType, boolean] => {
     ? selectedItem
     : { props: rootProps, readOnly: data.root.readOnly };
 
-  const resolveFields = useCallback(
-    async (fields: FieldsType = {}) => {
-      const lastData =
-        lastSelectedData.props?.id === componentData.props.id
-          ? lastSelectedData
-          : {};
+  const resolveFields = async (fields: FieldsType = {}) => {
+    const lastData =
+      lastSelectedData.props?.id === componentData.props.id
+        ? lastSelectedData
+        : {};
 
-      const changed = getChanged(componentData, lastData);
+    const changed = getChanged(componentData, lastData);
 
-      setLastSelectedData(componentData);
+    setLastSelectedData(componentData);
 
-      if (selectedItem && componentConfig?.resolveFields) {
-        return await componentConfig?.resolveFields(
-          componentData as ComponentData,
-          {
-            changed,
-            fields,
-            lastFields: resolvedFields,
-            lastData: lastData as ComponentData,
-            appState: state,
-          }
-        );
-      }
-
-      if (!selectedItem && config.root?.resolveFields) {
-        return await config.root?.resolveFields(componentData, {
+    if (selectedItem && componentConfig?.resolveFields) {
+      return await componentConfig?.resolveFields(
+        componentData as ComponentData,
+        {
           changed,
           fields,
           lastFields: resolvedFields,
-          lastData: lastData as RootData,
+          lastData: lastData as ComponentData,
           appState: state,
-        });
-      }
+        }
+      );
+    }
 
-      return defaultResolveFields(componentData, {
+    if (!selectedItem && config.root?.resolveFields) {
+      return await config.root?.resolveFields(componentData, {
         changed,
         fields,
         lastFields: resolvedFields,
-        lastData,
+        lastData: lastData as RootData,
+        appState: state,
       });
-    },
-    [data, config, componentData, selectedItem, resolvedFields, state]
-  );
+    }
+
+    return defaultResolveFields(componentData, {
+      changed,
+      fields,
+      lastFields: resolvedFields,
+      lastData,
+    });
+  };
 
   useEffect(() => {
     setFieldsLoading(true);

@@ -14,5 +14,5 @@
   border: none;
   margin: 0;
   min-width: 0; /* Needed to ensure External input doesn't overflow, see https://stackoverflow.com/a/53784508 */
-  padding: 16px 15px;
+  padding: 10px;
 }

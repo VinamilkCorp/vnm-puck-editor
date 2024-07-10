@@ -29167,7 +29167,7 @@ var getClassNameFactory = (rootClass, styles, { baseClass = "" } = {}) => (optio
 var get_class_name_factory_default = getClassNameFactory;
 
 // css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/AutoField/styles.module.css#css-module
-var styles_module_default = { "Input": "_Input_3pq3z_1", "Input-label": "_Input-label_3pq3z_26", "Input-labelIcon": "_Input-labelIcon_3pq3z_35", "Input-disabledIcon": "_Input-disabledIcon_3pq3z_42", "Input-input": "_Input-input_3pq3z_47", "Input--readOnly": "_Input--readOnly_3pq3z_91", "Input-radioGroupItems": "_Input-radioGroupItems_3pq3z_102", "Input-radio": "_Input-radio_3pq3z_102", "Input-radioInner": "_Input-radioInner_3pq3z_119", "Input-radioInput": "_Input-radioInput_3pq3z_164" };
+var styles_module_default = { "Input": "_Input_1z0q0_1", "Input-label": "_Input-label_1z0q0_25", "Input-labelIcon": "_Input-labelIcon_1z0q0_34", "Input-disabledIcon": "_Input-disabledIcon_1z0q0_41", "Input-input": "_Input-input_1z0q0_46", "Input--readOnly": "_Input--readOnly_1z0q0_90", "Input-radioGroupItems": "_Input-radioGroupItems_1z0q0_101", "Input-radio": "_Input-radio_1z0q0_101", "Input-radioInner": "_Input-radioInner_1z0q0_118", "Input-radioInput": "_Input-radioInput_1z0q0_163" };
 
 // components/AutoField/index.tsx
 var import_react10 = require("react");
@@ -30573,7 +30573,7 @@ var TextareaField = ({
 var import_use_debounce = require("use-debounce");
 
 // css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/AutoField/fields/ObjectField/styles.module.css#css-module
-var styles_module_default8 = { "ObjectField": "_ObjectField_1ua3y_5", "ObjectField-fieldset": "_ObjectField-fieldset_1ua3y_13" };
+var styles_module_default8 = { "ObjectField": "_ObjectField_1ry4r_5", "ObjectField-fieldset": "_ObjectField-fieldset_1ry4r_13" };
 
 // components/AutoField/fields/ObjectField/index.tsx
 var import_jsx_runtime18 = require("react/jsx-runtime");
@@ -30766,7 +30766,7 @@ function AutoField(props) {
 }
 
 // css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/Drawer/styles.module.css#css-module
-var styles_module_default9 = { "Drawer": "_Drawer_6zh0b_1", "DrawerItem-default": "_DrawerItem-default_6zh0b_5", "DrawerItem-draggableWrapper": "_DrawerItem-draggableWrapper_6zh0b_5", "DrawerItem": "_DrawerItem_6zh0b_5", "DrawerItem-draggable": "_DrawerItem-draggable_6zh0b_5", "Drawer--isDraggingFrom": "_Drawer--isDraggingFrom_6zh0b_31", "DrawerItem-name": "_DrawerItem-name_6zh0b_47" };
+var styles_module_default9 = { "Drawer": "_Drawer_rik0t_1", "DrawerItem-default": "_DrawerItem-default_rik0t_5", "DrawerItem-draggableWrapper": "_DrawerItem-draggableWrapper_rik0t_5", "DrawerItem": "_DrawerItem_rik0t_5", "DrawerItem-draggable": "_DrawerItem-draggable_rik0t_5", "Drawer--isDraggingFrom": "_Drawer--isDraggingFrom_rik0t_31", "DrawerItem-name": "_DrawerItem-name_rik0t_47" };
 
 // components/Drawer/index.tsx
 var import_react11 = require("react");
@@ -31500,7 +31500,7 @@ var usePlaceholderStyle = () => {
 };
 
 // css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/SidebarSection/styles.module.css#css-module
-var styles_module_default12 = { "SidebarSection": "_SidebarSection_125qe_1", "SidebarSection-title": "_SidebarSection-title_125qe_12", "SidebarSection--noBorderTop": "_SidebarSection--noBorderTop_125qe_20", "SidebarSection-content": "_SidebarSection-content_125qe_24", "SidebarSection--noPadding": "_SidebarSection--noPadding_125qe_28", "SidebarSection-breadcrumbLabel": "_SidebarSection-breadcrumbLabel_125qe_41", "SidebarSection-breadcrumbs": "_SidebarSection-breadcrumbs_125qe_70", "SidebarSection-breadcrumb": "_SidebarSection-breadcrumb_125qe_41", "SidebarSection-heading": "_SidebarSection-heading_125qe_82", "SidebarSection-loadingOverlay": "_SidebarSection-loadingOverlay_125qe_86" };
+var styles_module_default12 = { "SidebarSection": "_SidebarSection_i1o6v_1", "SidebarSection-title": "_SidebarSection-title_i1o6v_12", "SidebarSection--noBorderTop": "_SidebarSection--noBorderTop_i1o6v_20", "SidebarSection-content": "_SidebarSection-content_i1o6v_24", "SidebarSection--noPadding": "_SidebarSection--noPadding_i1o6v_28", "SidebarSection-breadcrumbLabel": "_SidebarSection-breadcrumbLabel_i1o6v_41", "SidebarSection-breadcrumbs": "_SidebarSection-breadcrumbs_i1o6v_70", "SidebarSection-breadcrumb": "_SidebarSection-breadcrumb_i1o6v_41", "SidebarSection-heading": "_SidebarSection-heading_i1o6v_82", "SidebarSection-loadingOverlay": "_SidebarSection-loadingOverlay_i1o6v_86" };
 
 // lib/use-breadcrumbs.ts
 var import_react17 = require("react");
@@ -32234,42 +32234,39 @@ var useResolvedFields = () => {
   const [fieldsLoading, setFieldsLoading] = (0, import_react19.useState)(false);
   const defaultResolveFields = (_componentData, _params) => defaultFields;
   const componentData = selectedItem ? selectedItem : { props: rootProps, readOnly: data.root.readOnly };
-  const resolveFields = (0, import_react19.useCallback)(
-    (..._0) => __async(void 0, [..._0], function* (fields = {}) {
-      var _a2, _b, _c;
-      const lastData = ((_a2 = lastSelectedData.props) == null ? void 0 : _a2.id) === componentData.props.id ? lastSelectedData : {};
-      const changed = getChanged(componentData, lastData);
-      setLastSelectedData(componentData);
-      if (selectedItem && (componentConfig == null ? void 0 : componentConfig.resolveFields)) {
-        return yield componentConfig == null ? void 0 : componentConfig.resolveFields(
-          componentData,
-          {
-            changed,
-            fields,
-            lastFields: resolvedFields,
-            lastData,
-            appState: state
-          }
-        );
-      }
-      if (!selectedItem && ((_b = config.root) == null ? void 0 : _b.resolveFields)) {
-        return yield (_c = config.root) == null ? void 0 : _c.resolveFields(componentData, {
+  const resolveFields = (..._0) => __async(void 0, [..._0], function* (fields = {}) {
+    var _a2, _b, _c;
+    const lastData = ((_a2 = lastSelectedData.props) == null ? void 0 : _a2.id) === componentData.props.id ? lastSelectedData : {};
+    const changed = getChanged(componentData, lastData);
+    setLastSelectedData(componentData);
+    if (selectedItem && (componentConfig == null ? void 0 : componentConfig.resolveFields)) {
+      return yield componentConfig == null ? void 0 : componentConfig.resolveFields(
+        componentData,
+        {
           changed,
           fields,
           lastFields: resolvedFields,
           lastData,
           appState: state
-        });
-      }
-      return defaultResolveFields(componentData, {
+        }
+      );
+    }
+    if (!selectedItem && ((_b = config.root) == null ? void 0 : _b.resolveFields)) {
+      return yield (_c = config.root) == null ? void 0 : _c.resolveFields(componentData, {
         changed,
         fields,
         lastFields: resolvedFields,
-        lastData
+        lastData,
+        appState: state
       });
-    }),
-    [data, config, componentData, selectedItem, resolvedFields, state]
-  );
+    }
+    return defaultResolveFields(componentData, {
+      changed,
+      fields,
+      lastFields: resolvedFields,
+      lastData
+    });
+  });
   (0, import_react19.useEffect)(() => {
     setFieldsLoading(true);
     resolveFields(defaultFields).then((fields) => {
