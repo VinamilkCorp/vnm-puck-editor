@@ -13,14 +13,7 @@ import { useAppContext } from "../../context";
 
 import styles from "./styles.module.css";
 import { getClassNameFactory } from "../../../../lib";
-import {
-  Fragment,
-  ReactNode,
-  useCallback,
-  useEffect,
-  useMemo,
-  useState,
-} from "react";
+import { ReactNode, useCallback, useEffect, useMemo, useState } from "react";
 import { ItemSelector } from "../../../../lib/get-item";
 import { getChanged } from "../../../../lib/get-changed";
 
@@ -132,7 +125,7 @@ const useResolvedFields = (): [FieldsType, boolean] => {
 
       setFieldsLoading(false);
     });
-  }, [data, defaultFields]);
+  }, [data, defaultFields, selectedItem]);
 
   return [resolvedFields, fieldsLoading];
 };
@@ -161,9 +154,7 @@ export const Fields = () => {
   // DEPRECATED
   const rootProps = data.root.props || data.root;
 
-  const Wrapper = overrides.fields || DefaultFields;
-
-  console.log(selectedItem);
+  const Wrapper = useMemo(() => overrides.fields || DefaultFields, [overrides]);
 
   return (
     <form

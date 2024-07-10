@@ -8013,7 +8013,7 @@ var require_react_dom_development = __commonJS({
         var HostPortal = 4;
         var HostComponent = 5;
         var HostText = 6;
-        var Fragment20 = 7;
+        var Fragment19 = 7;
         var Mode = 8;
         var ContextConsumer = 9;
         var ContextProvider = 10;
@@ -9169,7 +9169,7 @@ var require_react_dom_development = __commonJS({
               return "DehydratedFragment";
             case ForwardRef:
               return getWrappedName$1(type, type.render, "ForwardRef");
-            case Fragment20:
+            case Fragment19:
               return "Fragment";
             case HostComponent:
               return type;
@@ -17570,7 +17570,7 @@ var require_react_dom_development = __commonJS({
             }
           }
           function updateFragment2(returnFiber, current2, fragment, lanes, key) {
-            if (current2 === null || current2.tag !== Fragment20) {
+            if (current2 === null || current2.tag !== Fragment19) {
               var created = createFiberFromFragment(fragment, returnFiber.mode, lanes, key);
               created.return = returnFiber;
               return created;
@@ -17973,7 +17973,7 @@ var require_react_dom_development = __commonJS({
               if (child.key === key) {
                 var elementType = element.type;
                 if (elementType === REACT_FRAGMENT_TYPE) {
-                  if (child.tag === Fragment20) {
+                  if (child.tag === Fragment19) {
                     deleteRemainingChildren(returnFiber, child.sibling);
                     var existing = useFiber(child, element.props.children);
                     existing.return = returnFiber;
@@ -23450,7 +23450,7 @@ var require_react_dom_development = __commonJS({
               var _resolvedProps2 = workInProgress2.elementType === type ? _unresolvedProps2 : resolveDefaultProps(type, _unresolvedProps2);
               return updateForwardRef(current2, workInProgress2, type, _resolvedProps2, renderLanes2);
             }
-            case Fragment20:
+            case Fragment19:
               return updateFragment(current2, workInProgress2, renderLanes2);
             case Mode:
               return updateMode(current2, workInProgress2, renderLanes2);
@@ -23723,7 +23723,7 @@ var require_react_dom_development = __commonJS({
             case SimpleMemoComponent:
             case FunctionComponent:
             case ForwardRef:
-            case Fragment20:
+            case Fragment19:
             case Mode:
             case Profiler:
             case ContextConsumer:
@@ -27982,7 +27982,7 @@ var require_react_dom_development = __commonJS({
           return fiber;
         }
         function createFiberFromFragment(elements, mode, lanes, key) {
-          var fiber = createFiber(Fragment20, elements, key, mode);
+          var fiber = createFiber(Fragment19, elements, key, mode);
           fiber.lanes = lanes;
           return fiber;
         }
@@ -32276,7 +32276,7 @@ var useResolvedFields = () => {
       setResolvedFields(fields || {});
       setFieldsLoading(false);
     });
-  }, [data, defaultFields]);
+  }, [data, defaultFields, selectedItem]);
   return [resolvedFields, fieldsLoading];
 };
 var Fields = () => {
@@ -32296,8 +32296,7 @@ var Fields = () => {
   const componentResolving = selectedItem ? (_a = componentState[selectedItem == null ? void 0 : selectedItem.props.id]) == null ? void 0 : _a.loading : (_b = componentState["puck-root"]) == null ? void 0 : _b.loading;
   const isLoading = fieldsResolving || componentResolving;
   const rootProps = data.root.props || data.root;
-  const Wrapper = overrides.fields || DefaultFields;
-  console.log(selectedItem);
+  const Wrapper = (0, import_react19.useMemo)(() => overrides.fields || DefaultFields, [overrides]);
   return /* @__PURE__ */ (0, import_jsx_runtime26.jsxs)(
     "form",
     {
