@@ -13,7 +13,14 @@ import { useAppContext } from "../../context";
 
 import styles from "./styles.module.css";
 import { getClassNameFactory } from "../../../../lib";
-import { ReactNode, useCallback, useEffect, useMemo, useState } from "react";
+import {
+  Fragment,
+  ReactNode,
+  useCallback,
+  useEffect,
+  useMemo,
+  useState,
+} from "react";
 import { ItemSelector } from "../../../../lib/get-item";
 import { getChanged } from "../../../../lib/get-changed";
 
@@ -73,46 +80,49 @@ const useResolvedFields = (): [FieldsType, boolean] => {
     ? selectedItem
     : { props: rootProps, readOnly: data.root.readOnly };
 
-  const resolveFields = async (fields: FieldsType = {}) => {
-    const lastData =
-      lastSelectedData.props?.id === componentData.props.id
-        ? lastSelectedData
-        : {};
+  const resolveFields = useCallback(
+    async (fields: FieldsType = {}) => {
+      const lastData =
+        lastSelectedData.props?.id === componentData.props.id
+          ? lastSelectedData
+          : {};
 
-    const changed = getChanged(componentData, lastData);
+      const changed = getChanged(componentData, lastData);
 
-    setLastSelectedData(componentData);
+      setLastSelectedData(componentData);
 
-    if (selectedItem && componentConfig?.resolveFields) {
-      return await componentConfig?.resolveFields(
-        componentData as ComponentData,
-        {
+      if (selectedItem && componentConfig?.resolveFields) {
+        return await componentConfig?.resolveFields(
+          componentData as ComponentData,
+          {
+            changed,
+            fields,
+            lastFields: resolvedFields,
+            lastData: lastData as ComponentData,
+            appState: state,
+          }
+        );
+      }
+
+      if (!selectedItem && config.root?.resolveFields) {
+        return await config.root?.resolveFields(componentData, {
           changed,
           fields,
           lastFields: resolvedFields,
-          lastData: lastData as ComponentData,
+          lastData: lastData as RootData,
           appState: state,
-        }
-      );
-    }
+        });
+      }
 
-    if (!selectedItem && config.root?.resolveFields) {
-      return await config.root?.resolveFields(componentData, {
+      return defaultResolveFields(componentData, {
         changed,
         fields,
         lastFields: resolvedFields,
-        lastData: lastData as RootData,
-        appState: state,
+        lastData,
       });
-    }
-
-    return defaultResolveFields(componentData, {
-      changed,
-      fields,
-      lastFields: resolvedFields,
-      lastData,
-    });
-  };
+    },
+    [data, config, componentData, selectedItem, resolvedFields, state]
+  );
 
   useEffect(() => {
     setFieldsLoading(true);
@@ -151,7 +161,9 @@ export const Fields = () => {
   // DEPRECATED
   const rootProps = data.root.props || data.root;
 
-  const Wrapper = useMemo(() => overrides.fields || DefaultFields, [overrides]);
+  const Wrapper = overrides.fields || DefaultFields;
+
+  console.log(selectedItem);
 
   return (
     <form
