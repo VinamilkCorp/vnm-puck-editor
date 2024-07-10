@@ -125,7 +125,7 @@ const useResolvedFields = (): [FieldsType, boolean] => {
 
       setFieldsLoading(false);
     });
-  }, [data, defaultFields]);
+  }, [data, defaultFields, selectedItem?.props?.id]);
 
   return [resolvedFields, fieldsLoading];
 };
