@@ -31,12 +31,7 @@ export const ObjectField = ({
   const data = value || {};
 
   return (
-    <Label
-      label={label || name}
-      icon={<MoreVertical size={16} />}
-      el="div"
-      readOnly={readOnly}
-    >
+    <Label label={label || name} el="div" readOnly={readOnly}>
       <div className={getClassName()}>
         <fieldset className={getClassName("fieldset")}>
           {Object.keys(field.objectFields!).map((fieldName) => {

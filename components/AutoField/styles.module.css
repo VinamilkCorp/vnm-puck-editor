@@ -27,8 +27,7 @@
   color: var(--puck-color-grey-04);
   display: flex;
   padding-bottom: 12px;
-  font-size: var(--puck-font-size-xxs);
-  font-weight: 600;
+  font-size: 12px;
 }
 
 .Input-labelIcon {
@@ -54,6 +53,7 @@
   padding: 10px;
   transition: border-color 50ms ease-in;
   width: 100%;
+  font-size: 12px;
 }
 
 select.Input-input {

@@ -114,12 +114,7 @@ export const ArrayField = ({
     readOnly;
 
   return (
-    <Label
-      label={label || name}
-      icon={<List size={16} />}
-      el="div"
-      readOnly={readOnly}
-    >
+    <Label label={label || name} el="div" readOnly={readOnly}>
       <DragDropContext
         onDragEnd={(event) => {
           if (event.destination) {

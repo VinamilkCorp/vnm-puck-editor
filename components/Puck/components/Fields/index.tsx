@@ -118,7 +118,6 @@ const useResolvedFields = (): [FieldsType, boolean] => {
   );
 
   useEffect(() => {
-    console.log(data, selectedItem, defaultFields);
     setFieldsLoading(true);
     resolveFields(defaultFields).then((fields) => {
       setResolvedFields(fields || {});

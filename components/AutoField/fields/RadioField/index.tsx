@@ -20,12 +20,7 @@ export const RadioField = ({
   }
 
   return (
-    <Label
-      icon={<CheckCircle size={16} />}
-      label={label || name}
-      readOnly={readOnly}
-      el="div"
-    >
+    <Label label={label || name} readOnly={readOnly} el="div">
       <div className={getClassName("radioGroupItems")} id={id}>
         {field.options.map((option) => (
           <label

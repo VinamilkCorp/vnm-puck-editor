@@ -20,11 +20,7 @@ export const SelectField = ({
   }
 
   return (
-    <Label
-      label={label || name}
-      icon={<ChevronDown size={16} />}
-      readOnly={readOnly}
-    >
+    <Label label={label || name} readOnly={readOnly}>
       <select
         id={id}
         className={getClassName("input")}

@@ -34,7 +34,7 @@ export const ExternalField = ({
   }
 
   return (
-    <Label label={label || name} icon={<Link size={16} />} el="div">
+    <Label label={label || name} el="div">
       <ExternalInput
         name={name}
         field={{

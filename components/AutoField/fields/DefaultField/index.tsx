@@ -16,16 +16,7 @@ export const DefaultField = ({
   id,
 }: FieldPropsInternal) => {
   return (
-    <Label
-      label={label || name}
-      icon={
-        <>
-          {field.type === "text" && <Type size={16} />}
-          {field.type === "number" && <Hash size={16} />}
-        </>
-      }
-      readOnly={readOnly}
-    >
+    <Label label={label || name} readOnly={readOnly}>
       <input
         className={getClassName("input")}
         autoComplete="off"
