@@ -32237,6 +32237,7 @@ var useResolvedFields = () => {
   const resolveFields = (0, import_react19.useCallback)(
     (..._0) => __async(void 0, [..._0], function* (fields = {}) {
       var _a2, _b, _c;
+      console.log(fields, "fields");
       const lastData = ((_a2 = lastSelectedData.props) == null ? void 0 : _a2.id) === componentData.props.id ? lastSelectedData : {};
       const changed = getChanged(componentData, lastData);
       setLastSelectedData(componentData);
@@ -32276,7 +32277,7 @@ var useResolvedFields = () => {
       setResolvedFields(fields || {});
       setFieldsLoading(false);
     });
-  }, [data, defaultFields, selectedItem]);
+  }, [data, defaultFields]);
   return [resolvedFields, fieldsLoading];
 };
 var Fields = () => {
