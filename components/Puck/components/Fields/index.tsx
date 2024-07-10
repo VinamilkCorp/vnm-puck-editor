@@ -75,7 +75,6 @@ const useResolvedFields = (): [FieldsType, boolean] => {
 
   const resolveFields = useCallback(
     async (fields: FieldsType = {}) => {
-      console.log(fields, "fields");
       const lastData =
         lastSelectedData.props?.id === componentData.props.id
           ? lastSelectedData
@@ -119,6 +118,7 @@ const useResolvedFields = (): [FieldsType, boolean] => {
   );
 
   useEffect(() => {
+    console.log(data, selectedItem, defaultFields);
     setFieldsLoading(true);
     resolveFields(defaultFields).then((fields) => {
       setResolvedFields(fields || {});
