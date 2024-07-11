@@ -30689,7 +30689,7 @@ function AutoField(props) {
 }
 
 // css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/Drawer/styles.module.css#css-module
-var styles_module_default9 = { "Drawer": "_Drawer_1mgsl_1", "DrawerItem-default": "_DrawerItem-default_1mgsl_5", "DrawerItem-draggableWrapper": "_DrawerItem-draggableWrapper_1mgsl_5", "DrawerItem": "_DrawerItem_1mgsl_5", "DrawerItem-draggable": "_DrawerItem-draggable_1mgsl_5", "Drawer--isDraggingFrom": "_Drawer--isDraggingFrom_1mgsl_33", "DrawerItem-name": "_DrawerItem-name_1mgsl_49" };
+var styles_module_default9 = { "Drawer": "_Drawer_qfff2_1", "DrawerItem-default": "_DrawerItem-default_qfff2_8", "DrawerItem-draggableWrapper": "_DrawerItem-draggableWrapper_qfff2_8", "DrawerItem": "_DrawerItem_qfff2_8", "DrawerItem-draggable": "_DrawerItem-draggable_qfff2_8", "Drawer--isDraggingFrom": "_Drawer--isDraggingFrom_qfff2_33", "DrawerItem-name": "_DrawerItem-name_qfff2_49" };
 
 // components/Drawer/index.tsx
 var import_react11 = require("react");
@@ -30908,7 +30908,7 @@ var DraggableComponent = ({
 };
 
 // css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/DropZone/styles.module.css#css-module
-var styles_module_default11 = { "DropZone": "_DropZone_djoti_1", "DropZone-content": "_DropZone-content_djoti_10", "DropZone--userIsDragging": "_DropZone--userIsDragging_djoti_15", "DropZone--draggingOverArea": "_DropZone--draggingOverArea_djoti_19", "DropZone--draggingNewComponent": "_DropZone--draggingNewComponent_djoti_20", "DropZone--isAreaSelected": "_DropZone--isAreaSelected_djoti_26", "DropZone--hoveringOverArea": "_DropZone--hoveringOverArea_djoti_27", "DropZone--isDisabled": "_DropZone--isDisabled_djoti_28", "DropZone--isRootZone": "_DropZone--isRootZone_djoti_29", "DropZone--hasChildren": "_DropZone--hasChildren_djoti_30", "DropZone--isDestination": "_DropZone--isDestination_djoti_40", "DropZone-item": "_DropZone-item_djoti_52", "DropZone-hitbox": "_DropZone-hitbox_djoti_56" };
+var styles_module_default11 = { "DropZone": "_DropZone_lb652_1", "DropZone-content": "_DropZone-content_lb652_10", "DropZone--userIsDragging": "_DropZone--userIsDragging_lb652_15", "DropZone--draggingOverArea": "_DropZone--draggingOverArea_lb652_19", "DropZone--draggingNewComponent": "_DropZone--draggingNewComponent_lb652_20", "DropZone--isAreaSelected": "_DropZone--isAreaSelected_lb652_26", "DropZone--hoveringOverArea": "_DropZone--hoveringOverArea_lb652_27", "DropZone--isDisabled": "_DropZone--isDisabled_lb652_28", "DropZone--isRootZone": "_DropZone--isRootZone_lb652_29", "DropZone--hasChildren": "_DropZone--hasChildren_lb652_30", "DropZone--isDestination": "_DropZone--isDestination_lb652_40", "DropZone-item": "_DropZone-item_lb652_52", "DropZone-hitbox": "_DropZone-hitbox_lb652_56" };
 
 // components/DropZone/context.tsx
 var import_react14 = require("react");
