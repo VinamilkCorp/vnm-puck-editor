@@ -1169,7 +1169,7 @@ textarea._Input-input_1mgx4_45 {
 }
 
 /* css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/DropZone/styles.module.css/#css-module-data */
-._DropZone_djoti_1 {
+._DropZone_kvsgk_1 {
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -1177,36 +1177,36 @@ textarea._Input-input_1mgx4_45 {
   outline-offset: -2px;
   width: 100%;
 }
-._DropZone-content_djoti_10 {
-  min-height: 128px;
+._DropZone-content_kvsgk_10 {
+  min-height: 70px;
   height: 100%;
 }
-._DropZone--userIsDragging_djoti_15 ._DropZone-content_djoti_10 {
+._DropZone--userIsDragging_kvsgk_15 ._DropZone-content_kvsgk_10 {
   pointer-events: all;
 }
-._DropZone--userIsDragging_djoti_15:not(._DropZone--draggingOverArea_djoti_19):not(._DropZone--draggingNewComponent_djoti_20) > ._DropZone-content_djoti_10 {
+._DropZone--userIsDragging_kvsgk_15:not(._DropZone--draggingOverArea_kvsgk_19):not(._DropZone--draggingNewComponent_kvsgk_20) > ._DropZone-content_kvsgk_10 {
   pointer-events: none;
 }
-._DropZone--isAreaSelected_djoti_26,
-._DropZone--draggingOverArea_djoti_19:not(:has(._DropZone--hoveringOverArea_djoti_27)),
-._DropZone--hoveringOverArea_djoti_27:not(._DropZone--isDisabled_djoti_28):not(._DropZone--isRootZone_djoti_29):not(._DropZone--hasChildren_djoti_30) {
+._DropZone--isAreaSelected_kvsgk_26,
+._DropZone--draggingOverArea_kvsgk_19:not(:has(._DropZone--hoveringOverArea_kvsgk_27)),
+._DropZone--hoveringOverArea_kvsgk_27:not(._DropZone--isDisabled_kvsgk_28):not(._DropZone--isRootZone_kvsgk_29):not(._DropZone--hasChildren_kvsgk_30) {
   background: color-mix(in srgb, var(--puck-color-azure-09) 30%, transparent);
   outline: 2px dashed var(--puck-color-azure-08);
 }
-._DropZone_djoti_1:not(._DropZone--hasChildren_djoti_30) {
+._DropZone_kvsgk_1:not(._DropZone--hasChildren_kvsgk_30) {
   background: color-mix(in srgb, var(--puck-color-azure-09) 30%, transparent);
   outline: 2px dashed var(--puck-color-azure-08);
 }
-._DropZone--isDestination_djoti_40 {
+._DropZone--isDestination_kvsgk_40 {
   outline: 2px dashed var(--puck-color-azure-04) !important;
 }
-._DropZone--isDestination_djoti_40:not(._DropZone--isRootZone_djoti_29) {
+._DropZone--isDestination_kvsgk_40:not(._DropZone--isRootZone_kvsgk_29) {
   background: color-mix(in srgb, var(--puck-color-azure-09) 30%, transparent) !important;
 }
-._DropZone-item_djoti_52 {
+._DropZone-item_kvsgk_52 {
   position: relative;
 }
-._DropZone-hitbox_djoti_56 {
+._DropZone-hitbox_kvsgk_56 {
   position: absolute;
   bottom: -12px;
   height: 24px;
