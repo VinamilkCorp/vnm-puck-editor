@@ -1,13 +1,13 @@
 .Drawer {
   font-family: var(--puck-font-family);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 5px;
 }
 
 .DrawerItem-default .DrawerItem-draggableWrapper {
   /* padding required here to prevent bug when cancelling a drag) */
-  padding-bottom: 12px;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
+  padding-bottom: 5px;
 }
 
 .DrawerItem:last-of-type .DrawerItem-default .DrawerItem-draggableWrapper {
