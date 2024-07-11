@@ -14,12 +14,12 @@ export const Heading = ({ children, rank, size = "m" }: HeadingProps) => {
   const Tag: any = rank ? `h${rank}` : "span";
 
   return (
-    <Tag
+    <div
       className={getClassName({
         [size]: true,
       })}
     >
       {children}
-    </Tag>
+    </div>
   );
 };

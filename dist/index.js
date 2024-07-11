@@ -30070,7 +30070,7 @@ var getClassName7 = get_class_name_factory_default("Heading", styles_module_defa
 var Heading = ({ children, rank, size = "m" }) => {
   const Tag = rank ? `h${rank}` : "span";
   return /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(
-    Tag,
+    "div",
     {
       className: getClassName7({
         [size]: true
