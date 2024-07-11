@@ -30689,7 +30689,7 @@ function AutoField(props) {
 }
 
 // css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/Drawer/styles.module.css#css-module
-var styles_module_default9 = { "Drawer": "_Drawer_1vk4l_1", "DrawerItem-default": "_DrawerItem-default_1vk4l_8", "DrawerItem-draggableWrapper": "_DrawerItem-draggableWrapper_1vk4l_8", "DrawerItem": "_DrawerItem_1vk4l_8", "DrawerItem-draggable": "_DrawerItem-draggable_1vk4l_8", "Drawer--isDraggingFrom": "_Drawer--isDraggingFrom_1vk4l_33", "DrawerItem-name": "_DrawerItem-name_1vk4l_49" };
+var styles_module_default9 = { "Drawer": "_Drawer_13bil_1", "DrawerItem-default": "_DrawerItem-default_13bil_5", "DrawerItem-draggableWrapper": "_DrawerItem-draggableWrapper_13bil_5", "DrawerItem": "_DrawerItem_13bil_5", "DrawerItem-draggable": "_DrawerItem-draggable_13bil_5", "Drawer--isDraggingFrom": "_Drawer--isDraggingFrom_13bil_34", "DrawerItem-name": "_DrawerItem-name_13bil_50" };
 
 // components/Drawer/index.tsx
 var import_react11 = require("react");
@@ -30729,8 +30729,8 @@ var DrawerItem = ({
     [children]
   );
   return /* @__PURE__ */ (0, import_jsx_runtime20.jsx)(DrawerDraggable, { id: resolvedId, index, children: /* @__PURE__ */ (0, import_jsx_runtime20.jsx)(CustomInner, { name, children: /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("div", { className: getClassNameItem2("draggableWrapper"), children: /* @__PURE__ */ (0, import_jsx_runtime20.jsxs)("div", { className: getClassNameItem2("draggable"), children: [
-    /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("div", { className: getClassNameItem2("icon"), children: /* @__PURE__ */ (0, import_jsx_runtime20.jsx)(DragIcon, {}) }),
-    /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("div", { className: getClassNameItem2("name"), children: label != null ? label : name })
+    /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("div", { className: getClassNameItem2("name"), children: label != null ? label : name }),
+    /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("div", { className: getClassNameItem2("icon"), children: /* @__PURE__ */ (0, import_jsx_runtime20.jsx)(DragIcon, {}) })
   ] }) }) }) });
 };
 var Drawer = ({
