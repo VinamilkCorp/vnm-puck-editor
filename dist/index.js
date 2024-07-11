@@ -30689,7 +30689,7 @@ function AutoField(props) {
 }
 
 // css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/Drawer/styles.module.css#css-module
-var styles_module_default9 = { "Drawer": "_Drawer_13bil_1", "DrawerItem-default": "_DrawerItem-default_13bil_5", "DrawerItem-draggableWrapper": "_DrawerItem-draggableWrapper_13bil_5", "DrawerItem": "_DrawerItem_13bil_5", "DrawerItem-draggable": "_DrawerItem-draggable_13bil_5", "Drawer--isDraggingFrom": "_Drawer--isDraggingFrom_13bil_34", "DrawerItem-name": "_DrawerItem-name_13bil_50" };
+var styles_module_default9 = { "Drawer": "_Drawer_1mgsl_1", "DrawerItem-default": "_DrawerItem-default_1mgsl_5", "DrawerItem-draggableWrapper": "_DrawerItem-draggableWrapper_1mgsl_5", "DrawerItem": "_DrawerItem_1mgsl_5", "DrawerItem-draggable": "_DrawerItem-draggable_1mgsl_5", "Drawer--isDraggingFrom": "_Drawer--isDraggingFrom_1mgsl_33", "DrawerItem-name": "_DrawerItem-name_1mgsl_49" };
 
 // components/Drawer/index.tsx
 var import_react11 = require("react");
@@ -30729,8 +30729,8 @@ var DrawerItem = ({
     [children]
   );
   return /* @__PURE__ */ (0, import_jsx_runtime20.jsx)(DrawerDraggable, { id: resolvedId, index, children: /* @__PURE__ */ (0, import_jsx_runtime20.jsx)(CustomInner, { name, children: /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("div", { className: getClassNameItem2("draggableWrapper"), children: /* @__PURE__ */ (0, import_jsx_runtime20.jsxs)("div", { className: getClassNameItem2("draggable"), children: [
-    /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("div", { className: getClassNameItem2("name"), children: label != null ? label : name }),
-    /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("div", { className: getClassNameItem2("icon"), children: /* @__PURE__ */ (0, import_jsx_runtime20.jsx)(DragIcon, {}) })
+    /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("div", { className: getClassNameItem2("icon"), children: /* @__PURE__ */ (0, import_jsx_runtime20.jsx)(DragIcon, {}) }),
+    /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("div", { className: getClassNameItem2("name"), children: label != null ? label : name })
   ] }) }) }) });
 };
 var Drawer = ({
@@ -31423,7 +31423,7 @@ var usePlaceholderStyle = () => {
 };
 
 // css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/SidebarSection/styles.module.css#css-module
-var styles_module_default12 = { "SidebarSection": "_SidebarSection_i1o6v_1", "SidebarSection-title": "_SidebarSection-title_i1o6v_12", "SidebarSection--noBorderTop": "_SidebarSection--noBorderTop_i1o6v_20", "SidebarSection-content": "_SidebarSection-content_i1o6v_24", "SidebarSection--noPadding": "_SidebarSection--noPadding_i1o6v_28", "SidebarSection-breadcrumbLabel": "_SidebarSection-breadcrumbLabel_i1o6v_41", "SidebarSection-breadcrumbs": "_SidebarSection-breadcrumbs_i1o6v_70", "SidebarSection-breadcrumb": "_SidebarSection-breadcrumb_i1o6v_41", "SidebarSection-heading": "_SidebarSection-heading_i1o6v_82", "SidebarSection-loadingOverlay": "_SidebarSection-loadingOverlay_i1o6v_86" };
+var styles_module_default12 = { "SidebarSection": "_SidebarSection_11bke_1", "SidebarSection-title": "_SidebarSection-title_11bke_12", "SidebarSection--noBorderTop": "_SidebarSection--noBorderTop_11bke_20", "SidebarSection-content": "_SidebarSection-content_11bke_24", "SidebarSection--noPadding": "_SidebarSection--noPadding_11bke_28", "SidebarSection-breadcrumbLabel": "_SidebarSection-breadcrumbLabel_11bke_41", "SidebarSection-breadcrumbs": "_SidebarSection-breadcrumbs_11bke_70", "SidebarSection-breadcrumb": "_SidebarSection-breadcrumb_11bke_41", "SidebarSection-heading": "_SidebarSection-heading_11bke_82", "SidebarSection-loadingOverlay": "_SidebarSection-loadingOverlay_11bke_86" };
 
 // lib/use-breadcrumbs.ts
 var import_react17 = require("react");
