@@ -1,3 +1,5 @@
+@import "https://rsms.me/inter/inter.css";
+
 /* styles/color.css */
 :root {
   --puck-color-rose-01: #4a001c;
@@ -986,21 +988,19 @@ textarea._Input-input_1mgx4_45 {
 }
 
 /* css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/Drawer/styles.module.css/#css-module-data */
-._Drawer_ta2yf_1 {
+._Drawer_1vk4l_1 {
   font-family: var(--puck-font-family);
-}
-._DrawerItem-default_ta2yf_5 ._DrawerItem-draggableWrapper_ta2yf_5 {
-  padding-bottom: 12px;
   display: grid;
-  grid-template: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   column-gap: 10px;
 }
-._DrawerItem_ta2yf_5:last-of-type ._DrawerItem-default_ta2yf_5 ._DrawerItem-draggableWrapper_ta2yf_5 {
+._DrawerItem-default_1vk4l_8 ._DrawerItem-draggableWrapper_1vk4l_8 {
+  padding-bottom: 12px;
+}
+._DrawerItem_1vk4l_8:last-of-type ._DrawerItem-default_1vk4l_8 ._DrawerItem-draggableWrapper_1vk4l_8 {
   padding-bottom: 0;
 }
-._DrawerItem-draggable_ta2yf_5 {
+._DrawerItem-draggable_1vk4l_8 {
   background: var(--puck-color-white);
   padding: 10px;
   display: flex;
@@ -1011,22 +1011,22 @@ textarea._Input-input_1mgx4_45 {
   cursor: grab;
   transition: background-color 50ms ease-in, color 50ms ease-in;
 }
-._DrawerItem_ta2yf_5:focus-visible {
+._DrawerItem_1vk4l_8:focus-visible {
   outline: 0;
 }
-._Drawer_ta2yf_1:not(._Drawer--isDraggingFrom_ta2yf_35) ._DrawerItem_ta2yf_5:focus-visible ._DrawerItem-draggable_ta2yf_5 {
+._Drawer_1vk4l_1:not(._Drawer--isDraggingFrom_1vk4l_33) ._DrawerItem_1vk4l_8:focus-visible ._DrawerItem-draggable_1vk4l_8 {
   border-radius: 4px;
   outline: 2px solid var(--puck-color-azure-05);
   outline-offset: 2px;
 }
 @media (hover: hover) and (pointer: fine) {
-  ._Drawer_ta2yf_1:not(._Drawer--isDraggingFrom_ta2yf_35) ._DrawerItem-draggable_ta2yf_5:hover {
+  ._Drawer_1vk4l_1:not(._Drawer--isDraggingFrom_1vk4l_33) ._DrawerItem-draggable_1vk4l_8:hover {
     background-color: var(--puck-color-azure-12);
     color: var(--puck-color-azure-04);
     transition: none;
   }
 }
-._DrawerItem-name_ta2yf_51 {
+._DrawerItem-name_1vk4l_49 {
   overflow-x: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

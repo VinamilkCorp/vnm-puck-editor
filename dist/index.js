@@ -30689,7 +30689,7 @@ function AutoField(props) {
 }
 
 // css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/Drawer/styles.module.css#css-module
-var styles_module_default9 = { "Drawer": "_Drawer_ta2yf_1", "DrawerItem-default": "_DrawerItem-default_ta2yf_5", "DrawerItem-draggableWrapper": "_DrawerItem-draggableWrapper_ta2yf_5", "DrawerItem": "_DrawerItem_ta2yf_5", "DrawerItem-draggable": "_DrawerItem-draggable_ta2yf_5", "Drawer--isDraggingFrom": "_Drawer--isDraggingFrom_ta2yf_35", "DrawerItem-name": "_DrawerItem-name_ta2yf_51" };
+var styles_module_default9 = { "Drawer": "_Drawer_1vk4l_1", "DrawerItem-default": "_DrawerItem-default_1vk4l_8", "DrawerItem-draggableWrapper": "_DrawerItem-draggableWrapper_1vk4l_8", "DrawerItem": "_DrawerItem_1vk4l_8", "DrawerItem-draggable": "_DrawerItem-draggable_1vk4l_8", "Drawer--isDraggingFrom": "_Drawer--isDraggingFrom_1vk4l_33", "DrawerItem-name": "_DrawerItem-name_1vk4l_49" };
 
 // components/Drawer/index.tsx
 var import_react11 = require("react");
