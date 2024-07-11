@@ -8013,7 +8013,7 @@ var require_react_dom_development = __commonJS({
         var HostPortal = 4;
         var HostComponent = 5;
         var HostText = 6;
-        var Fragment19 = 7;
+        var Fragment18 = 7;
         var Mode = 8;
         var ContextConsumer = 9;
         var ContextProvider = 10;
@@ -9169,7 +9169,7 @@ var require_react_dom_development = __commonJS({
               return "DehydratedFragment";
             case ForwardRef:
               return getWrappedName$1(type, type.render, "ForwardRef");
-            case Fragment19:
+            case Fragment18:
               return "Fragment";
             case HostComponent:
               return type;
@@ -17570,7 +17570,7 @@ var require_react_dom_development = __commonJS({
             }
           }
           function updateFragment2(returnFiber, current2, fragment, lanes, key) {
-            if (current2 === null || current2.tag !== Fragment19) {
+            if (current2 === null || current2.tag !== Fragment18) {
               var created = createFiberFromFragment(fragment, returnFiber.mode, lanes, key);
               created.return = returnFiber;
               return created;
@@ -17973,7 +17973,7 @@ var require_react_dom_development = __commonJS({
               if (child.key === key) {
                 var elementType = element.type;
                 if (elementType === REACT_FRAGMENT_TYPE) {
-                  if (child.tag === Fragment19) {
+                  if (child.tag === Fragment18) {
                     deleteRemainingChildren(returnFiber, child.sibling);
                     var existing = useFiber(child, element.props.children);
                     existing.return = returnFiber;
@@ -23450,7 +23450,7 @@ var require_react_dom_development = __commonJS({
               var _resolvedProps2 = workInProgress2.elementType === type ? _unresolvedProps2 : resolveDefaultProps(type, _unresolvedProps2);
               return updateForwardRef(current2, workInProgress2, type, _resolvedProps2, renderLanes2);
             }
-            case Fragment19:
+            case Fragment18:
               return updateFragment(current2, workInProgress2, renderLanes2);
             case Mode:
               return updateMode(current2, workInProgress2, renderLanes2);
@@ -23723,7 +23723,7 @@ var require_react_dom_development = __commonJS({
             case SimpleMemoComponent:
             case FunctionComponent:
             case ForwardRef:
-            case Fragment19:
+            case Fragment18:
             case Mode:
             case Profiler:
             case ContextConsumer:
@@ -27982,7 +27982,7 @@ var require_react_dom_development = __commonJS({
           return fiber;
         }
         function createFiberFromFragment(elements, mode, lanes, key) {
-          var fiber = createFiber(Fragment19, elements, key, mode);
+          var fiber = createFiber(Fragment18, elements, key, mode);
           fiber.lanes = lanes;
           return fiber;
         }
@@ -29167,7 +29167,7 @@ var getClassNameFactory = (rootClass, styles, { baseClass = "" } = {}) => (optio
 var get_class_name_factory_default = getClassNameFactory;
 
 // css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/AutoField/styles.module.css#css-module
-var styles_module_default = { "Input": "_Input_1z0q0_1", "Input-label": "_Input-label_1z0q0_25", "Input-labelIcon": "_Input-labelIcon_1z0q0_34", "Input-disabledIcon": "_Input-disabledIcon_1z0q0_41", "Input-input": "_Input-input_1z0q0_46", "Input--readOnly": "_Input--readOnly_1z0q0_90", "Input-radioGroupItems": "_Input-radioGroupItems_1z0q0_101", "Input-radio": "_Input-radio_1z0q0_101", "Input-radioInner": "_Input-radioInner_1z0q0_118", "Input-radioInput": "_Input-radioInput_1z0q0_163" };
+var styles_module_default = { "Input": "_Input_1mgx4_1", "Input-label": "_Input-label_1mgx4_25", "Input-labelIcon": "_Input-labelIcon_1mgx4_33", "Input-disabledIcon": "_Input-disabledIcon_1mgx4_40", "Input-input": "_Input-input_1mgx4_45", "Input--readOnly": "_Input--readOnly_1mgx4_90", "Input-radioGroupItems": "_Input-radioGroupItems_1mgx4_101", "Input-radio": "_Input-radio_1mgx4_101", "Input-radioInner": "_Input-radioInner_1mgx4_118", "Input-radioInput": "_Input-radioInput_1mgx4_163" };
 
 // components/AutoField/index.tsx
 var import_react10 = require("react");
@@ -29219,12 +29219,6 @@ var createLucideIcon = (iconName, iconNode) => {
   return Component;
 };
 
-// node_modules/lucide-react/dist/esm/icons/check-circle.js
-var CheckCircle = createLucideIcon("CheckCircle", [
-  ["path", { d: "M22 11.08V12a10 10 0 1 1-5.93-9.14", key: "g774vq" }],
-  ["path", { d: "m9 11 3 3L22 4", key: "1pflzl" }]
-]);
-
 // node_modules/lucide-react/dist/esm/icons/chevron-down.js
 var ChevronDown = createLucideIcon("ChevronDown", [
   ["path", { d: "m6 9 6 6 6-6", key: "qrunsl" }]
@@ -29249,14 +29243,6 @@ var Globe = createLucideIcon("Globe", [
   ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
   ["path", { d: "M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20", key: "13o1zl" }],
   ["path", { d: "M2 12h20", key: "9i4pu4" }]
-]);
-
-// node_modules/lucide-react/dist/esm/icons/hash.js
-var Hash = createLucideIcon("Hash", [
-  ["line", { x1: "4", x2: "20", y1: "9", y2: "9", key: "4lhtct" }],
-  ["line", { x1: "4", x2: "20", y1: "15", y2: "15", key: "vyu0kd" }],
-  ["line", { x1: "10", x2: "8", y1: "3", y2: "21", key: "1ggp8o" }],
-  ["line", { x1: "16", x2: "14", y1: "3", y2: "21", key: "weycgp" }]
 ]);
 
 // node_modules/lucide-react/dist/esm/icons/layers.js
@@ -29286,16 +29272,6 @@ var Link = createLucideIcon("Link", [
   ["path", { d: "M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71", key: "19qd67" }]
 ]);
 
-// node_modules/lucide-react/dist/esm/icons/list.js
-var List = createLucideIcon("List", [
-  ["line", { x1: "8", x2: "21", y1: "6", y2: "6", key: "7ey8pc" }],
-  ["line", { x1: "8", x2: "21", y1: "12", y2: "12", key: "rjfblc" }],
-  ["line", { x1: "8", x2: "21", y1: "18", y2: "18", key: "c3b1m8" }],
-  ["line", { x1: "3", x2: "3.01", y1: "6", y2: "6", key: "1g7gq3" }],
-  ["line", { x1: "3", x2: "3.01", y1: "12", y2: "12", key: "1pjlvk" }],
-  ["line", { x1: "3", x2: "3.01", y1: "18", y2: "18", key: "28t2mc" }]
-]);
-
 // node_modules/lucide-react/dist/esm/icons/lock.js
 var Lock = createLucideIcon("Lock", [
   ["rect", { width: "18", height: "11", x: "3", y: "11", rx: "2", ry: "2", key: "1w4ew1" }],
@@ -29307,13 +29283,6 @@ var Monitor = createLucideIcon("Monitor", [
   ["rect", { width: "20", height: "14", x: "2", y: "3", rx: "2", key: "48i651" }],
   ["line", { x1: "8", x2: "16", y1: "21", y2: "21", key: "1svkeh" }],
   ["line", { x1: "12", x2: "12", y1: "17", y2: "21", key: "vw1qmm" }]
-]);
-
-// node_modules/lucide-react/dist/esm/icons/more-vertical.js
-var MoreVertical = createLucideIcon("MoreVertical", [
-  ["circle", { cx: "12", cy: "12", r: "1", key: "41hilf" }],
-  ["circle", { cx: "12", cy: "5", r: "1", key: "gxeob9" }],
-  ["circle", { cx: "12", cy: "19", r: "1", key: "lyex9k" }]
 ]);
 
 // node_modules/lucide-react/dist/esm/icons/panel-left.js
@@ -29839,185 +29808,176 @@ var ArrayField = ({
     return null;
   }
   const addDisabled = field.max !== void 0 && localState.arrayState.items.length >= field.max || readOnly;
-  return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
-    Label,
+  return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Label, { label: label || name, el: "div", readOnly, children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+    DragDropContext,
     {
-      label: label || name,
-      icon: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(List, { size: 16 }),
-      el: "div",
-      readOnly,
-      children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
-        DragDropContext,
-        {
-          onDragEnd: (event) => {
-            var _a, _b;
-            if (event.destination) {
-              const newValue = reorder(
-                value,
-                event.source.index,
-                (_a = event.destination) == null ? void 0 : _a.index
-              );
-              const newArrayStateItems = reorder(
-                arrayState.items,
-                event.source.index,
-                (_b = event.destination) == null ? void 0 : _b.index
-              );
-              onChange(newValue, {
-                arrayState: __spreadProps(__spreadValues({}, state.ui.arrayState), {
-                  [id]: __spreadProps(__spreadValues({}, arrayState), { items: newArrayStateItems })
-                })
-              });
-              setLocalState({
-                value: newValue,
-                arrayState: __spreadProps(__spreadValues({}, arrayState), { items: newArrayStateItems })
-              });
-            }
-          },
-          children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Droppable, { droppableId: "array", isDropDisabled: readOnly, children: (provided, snapshot) => {
-            return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)(
-              "div",
-              __spreadProps(__spreadValues({}, provided.droppableProps), {
-                ref: provided.innerRef,
-                className: getClassName4({
-                  isDraggingFrom: !!snapshot.draggingFromThisWith,
-                  hasItems: Array.isArray(value) && value.length > 0,
-                  addDisabled
-                }),
-                onMouseOver: (e) => {
-                  e.stopPropagation();
-                  setHovering(true);
-                },
-                onMouseOut: (e) => {
-                  e.stopPropagation();
-                  setHovering(false);
-                },
-                children: [
-                  localState.arrayState.items.map((item, i) => {
-                    const { _arrayId = `${id}-${i}`, _originalIndex = i } = item;
-                    const data = Array.from(localState.value || [])[i] || {};
-                    return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
-                      Draggable,
-                      {
-                        id: _arrayId,
-                        index: i,
-                        className: (_, snapshot2) => getClassNameItem({
-                          isExpanded: arrayState.openId === _arrayId,
-                          isDragging: snapshot2 == null ? void 0 : snapshot2.isDragging,
-                          readOnly
-                        }),
-                        isDragDisabled: readOnly || !hovering,
-                        children: () => /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)(import_jsx_runtime8.Fragment, { children: [
-                          /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)(
-                            "div",
-                            {
-                              onClick: () => {
-                                if (arrayState.openId === _arrayId) {
-                                  setUi(
-                                    mapArrayStateToUi({
-                                      openId: ""
-                                    })
-                                  );
-                                } else {
-                                  setUi(
-                                    mapArrayStateToUi({
-                                      openId: _arrayId
-                                    })
-                                  );
-                                }
-                              },
-                              className: getClassNameItem("summary"),
-                              children: [
-                                field.getItemSummary ? field.getItemSummary(data, i) : `Item #${_originalIndex}`,
-                                /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: getClassNameItem("rhs"), children: [
-                                  !readOnly && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: getClassNameItem("actions"), children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: getClassNameItem("action"), children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
-                                    IconButton,
-                                    {
-                                      type: "button",
-                                      disabled: field.min !== void 0 && field.min >= localState.arrayState.items.length,
-                                      onClick: (e) => {
-                                        e.stopPropagation();
-                                        const existingValue = [
-                                          ...value || []
-                                        ];
-                                        const existingItems = [
-                                          ...arrayState.items || []
-                                        ];
-                                        existingValue.splice(i, 1);
-                                        existingItems.splice(i, 1);
-                                        onChange(
-                                          existingValue,
-                                          mapArrayStateToUi({
-                                            items: existingItems
-                                          })
-                                        );
-                                      },
-                                      title: "Delete",
-                                      children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Trash, { size: 16 })
-                                    }
-                                  ) }) }),
-                                  /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(DragIcon, {}) })
-                                ] })
-                              ]
-                            }
-                          ),
-                          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: getClassNameItem("body"), children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("fieldset", { className: getClassNameItem("fieldset"), children: Object.keys(field.arrayFields).map(
-                            (fieldName) => {
-                              const subField = field.arrayFields[fieldName];
-                              const subFieldName = `${name}[${i}].${fieldName}`;
-                              const wildcardFieldName = `${name}[*].${fieldName}`;
-                              return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
-                                AutoFieldPrivate,
-                                {
-                                  name: subFieldName,
-                                  label: subField.label || fieldName,
-                                  id: `${_arrayId}_${fieldName}`,
-                                  readOnly: typeof readOnlyFields[subFieldName] !== "undefined" ? readOnlyFields[subFieldName] : readOnlyFields[wildcardFieldName],
-                                  field: subField,
-                                  value: data[fieldName],
-                                  onChange: (val, ui) => {
-                                    onChange(
-                                      replace(value, i, __spreadProps(__spreadValues({}, data), {
-                                        [fieldName]: val
-                                      })),
-                                      ui
-                                    );
-                                  }
-                                },
-                                subFieldName
+      onDragEnd: (event) => {
+        var _a, _b;
+        if (event.destination) {
+          const newValue = reorder(
+            value,
+            event.source.index,
+            (_a = event.destination) == null ? void 0 : _a.index
+          );
+          const newArrayStateItems = reorder(
+            arrayState.items,
+            event.source.index,
+            (_b = event.destination) == null ? void 0 : _b.index
+          );
+          onChange(newValue, {
+            arrayState: __spreadProps(__spreadValues({}, state.ui.arrayState), {
+              [id]: __spreadProps(__spreadValues({}, arrayState), { items: newArrayStateItems })
+            })
+          });
+          setLocalState({
+            value: newValue,
+            arrayState: __spreadProps(__spreadValues({}, arrayState), { items: newArrayStateItems })
+          });
+        }
+      },
+      children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Droppable, { droppableId: "array", isDropDisabled: readOnly, children: (provided, snapshot) => {
+        return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)(
+          "div",
+          __spreadProps(__spreadValues({}, provided.droppableProps), {
+            ref: provided.innerRef,
+            className: getClassName4({
+              isDraggingFrom: !!snapshot.draggingFromThisWith,
+              hasItems: Array.isArray(value) && value.length > 0,
+              addDisabled
+            }),
+            onMouseOver: (e) => {
+              e.stopPropagation();
+              setHovering(true);
+            },
+            onMouseOut: (e) => {
+              e.stopPropagation();
+              setHovering(false);
+            },
+            children: [
+              localState.arrayState.items.map((item, i) => {
+                const { _arrayId = `${id}-${i}`, _originalIndex = i } = item;
+                const data = Array.from(localState.value || [])[i] || {};
+                return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+                  Draggable,
+                  {
+                    id: _arrayId,
+                    index: i,
+                    className: (_, snapshot2) => getClassNameItem({
+                      isExpanded: arrayState.openId === _arrayId,
+                      isDragging: snapshot2 == null ? void 0 : snapshot2.isDragging,
+                      readOnly
+                    }),
+                    isDragDisabled: readOnly || !hovering,
+                    children: () => /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)(import_jsx_runtime8.Fragment, { children: [
+                      /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)(
+                        "div",
+                        {
+                          onClick: () => {
+                            if (arrayState.openId === _arrayId) {
+                              setUi(
+                                mapArrayStateToUi({
+                                  openId: ""
+                                })
+                              );
+                            } else {
+                              setUi(
+                                mapArrayStateToUi({
+                                  openId: _arrayId
+                                })
                               );
                             }
-                          ) }) })
-                        ] })
-                      },
-                      _arrayId
-                    );
-                  }),
-                  provided.placeholder,
-                  !addDisabled && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
-                    "button",
-                    {
-                      type: "button",
-                      className: getClassName4("addButton"),
-                      onClick: () => {
-                        const existingValue = value || [];
-                        const newValue = [
-                          ...existingValue,
-                          field.defaultItemProps || {}
-                        ];
-                        const newArrayState = regenerateArrayState(newValue);
-                        onChange(newValue, mapArrayStateToUi(newArrayState));
-                      },
-                      children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Plus, { size: 21 })
-                    }
-                  )
-                ]
-              })
-            );
-          } })
-        }
-      )
+                          },
+                          className: getClassNameItem("summary"),
+                          children: [
+                            field.getItemSummary ? field.getItemSummary(data, i) : `Item #${_originalIndex}`,
+                            /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: getClassNameItem("rhs"), children: [
+                              !readOnly && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: getClassNameItem("actions"), children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: getClassNameItem("action"), children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+                                IconButton,
+                                {
+                                  type: "button",
+                                  disabled: field.min !== void 0 && field.min >= localState.arrayState.items.length,
+                                  onClick: (e) => {
+                                    e.stopPropagation();
+                                    const existingValue = [
+                                      ...value || []
+                                    ];
+                                    const existingItems = [
+                                      ...arrayState.items || []
+                                    ];
+                                    existingValue.splice(i, 1);
+                                    existingItems.splice(i, 1);
+                                    onChange(
+                                      existingValue,
+                                      mapArrayStateToUi({
+                                        items: existingItems
+                                      })
+                                    );
+                                  },
+                                  title: "Delete",
+                                  children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Trash, { size: 16 })
+                                }
+                              ) }) }),
+                              /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(DragIcon, {}) })
+                            ] })
+                          ]
+                        }
+                      ),
+                      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: getClassNameItem("body"), children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("fieldset", { className: getClassNameItem("fieldset"), children: Object.keys(field.arrayFields).map(
+                        (fieldName) => {
+                          const subField = field.arrayFields[fieldName];
+                          const subFieldName = `${name}[${i}].${fieldName}`;
+                          const wildcardFieldName = `${name}[*].${fieldName}`;
+                          return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+                            AutoFieldPrivate,
+                            {
+                              name: subFieldName,
+                              label: subField.label || fieldName,
+                              id: `${_arrayId}_${fieldName}`,
+                              readOnly: typeof readOnlyFields[subFieldName] !== "undefined" ? readOnlyFields[subFieldName] : readOnlyFields[wildcardFieldName],
+                              field: subField,
+                              value: data[fieldName],
+                              onChange: (val, ui) => {
+                                onChange(
+                                  replace(value, i, __spreadProps(__spreadValues({}, data), {
+                                    [fieldName]: val
+                                  })),
+                                  ui
+                                );
+                              }
+                            },
+                            subFieldName
+                          );
+                        }
+                      ) }) })
+                    ] })
+                  },
+                  _arrayId
+                );
+              }),
+              provided.placeholder,
+              !addDisabled && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+                "button",
+                {
+                  type: "button",
+                  className: getClassName4("addButton"),
+                  onClick: () => {
+                    const existingValue = value || [];
+                    const newValue = [
+                      ...existingValue,
+                      field.defaultItemProps || {}
+                    ];
+                    const newArrayState = regenerateArrayState(newValue);
+                    onChange(newValue, mapArrayStateToUi(newArrayState));
+                  },
+                  children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Plus, { size: 21 })
+                }
+              )
+            ]
+          })
+        );
+      } })
     }
-  );
+  ) });
 };
 
 // components/AutoField/fields/DefaultField/index.tsx
@@ -30033,39 +29993,28 @@ var DefaultField = ({
   Label,
   id
 }) => {
-  return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
-    Label,
+  return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Label, { label: label || name, readOnly, children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
+    "input",
     {
-      label: label || name,
-      icon: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(import_jsx_runtime9.Fragment, { children: [
-        field.type === "text" && /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Type, { size: 16 }),
-        field.type === "number" && /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Hash, { size: 16 })
-      ] }),
-      readOnly,
-      children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
-        "input",
-        {
-          className: getClassName5("input"),
-          autoComplete: "off",
-          type: field.type,
-          name,
-          value: typeof value === "undefined" ? "" : value,
-          onChange: (e) => {
-            if (field.type === "number") {
-              onChange(Number(e.currentTarget.value));
-            } else {
-              onChange(e.currentTarget.value);
-            }
-          },
-          readOnly,
-          tabIndex: readOnly ? -1 : void 0,
-          id,
-          min: field.type === "number" ? field.min : void 0,
-          max: field.type === "number" ? field.max : void 0
+      className: getClassName5("input"),
+      autoComplete: "off",
+      type: field.type,
+      name,
+      value: typeof value === "undefined" ? "" : value,
+      onChange: (e) => {
+        if (field.type === "number") {
+          onChange(Number(e.currentTarget.value));
+        } else {
+          onChange(e.currentTarget.value);
         }
-      )
+      },
+      readOnly,
+      tabIndex: readOnly ? -1 : void 0,
+      id,
+      min: field.type === "number" ? field.min : void 0,
+      max: field.type === "number" ? field.max : void 0
     }
-  );
+  ) });
 };
 
 // components/AutoField/fields/ExternalField/index.tsx
@@ -30414,7 +30363,7 @@ var ExternalField = ({
   if (field.type !== "external") {
     return null;
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(Label, { label: label || name, icon: /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(Link, { size: 16 }), el: "div", children: /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(Label, { label: label || name, el: "div", children: /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(
     ExternalInput,
     {
       name,
@@ -30452,43 +30401,34 @@ var RadioField = ({
   if (field.type !== "radio" || !field.options) {
     return null;
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(
-    Label,
+  return /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Label, { label: label || name, readOnly, el: "div", children: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("div", { className: getClassName10("radioGroupItems"), id, children: field.options.map((option) => /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)(
+    "label",
     {
-      icon: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(CheckCircle, { size: 16 }),
-      label: label || name,
-      readOnly,
-      el: "div",
-      children: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("div", { className: getClassName10("radioGroupItems"), id, children: field.options.map((option) => /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)(
-        "label",
-        {
-          className: getClassName10("radio"),
-          children: [
-            /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(
-              "input",
-              {
-                type: "radio",
-                className: getClassName10("radioInput"),
-                value: option.value,
-                name,
-                onChange: (e) => {
-                  if (e.currentTarget.value === "true" || e.currentTarget.value === "false") {
-                    onChange(JSON.parse(e.currentTarget.value));
-                    return;
-                  }
-                  onChange(e.currentTarget.value);
-                },
-                disabled: readOnly,
-                checked: value === option.value
+      className: getClassName10("radio"),
+      children: [
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(
+          "input",
+          {
+            type: "radio",
+            className: getClassName10("radioInput"),
+            value: option.value,
+            name,
+            onChange: (e) => {
+              if (e.currentTarget.value === "true" || e.currentTarget.value === "false") {
+                onChange(JSON.parse(e.currentTarget.value));
+                return;
               }
-            ),
-            /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("div", { className: getClassName10("radioInner"), children: option.label || option.value })
-          ]
-        },
-        option.label + option.value
-      )) })
-    }
-  );
+              onChange(e.currentTarget.value);
+            },
+            disabled: readOnly,
+            checked: value === option.value
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("div", { className: getClassName10("radioInner"), children: option.label || option.value })
+      ]
+    },
+    option.label + option.value
+  )) }) });
 };
 
 // components/AutoField/fields/SelectField/index.tsx
@@ -30507,38 +30447,30 @@ var SelectField = ({
   if (field.type !== "select" || !field.options) {
     return null;
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime16.jsx)(
-    Label,
+  return /* @__PURE__ */ (0, import_jsx_runtime16.jsx)(Label, { label: label || name, readOnly, children: /* @__PURE__ */ (0, import_jsx_runtime16.jsx)(
+    "select",
     {
-      label: label || name,
-      icon: /* @__PURE__ */ (0, import_jsx_runtime16.jsx)(ChevronDown, { size: 16 }),
-      readOnly,
-      children: /* @__PURE__ */ (0, import_jsx_runtime16.jsx)(
-        "select",
-        {
-          id,
-          className: getClassName11("input"),
-          disabled: readOnly,
-          onChange: (e) => {
-            if (e.currentTarget.value === "true" || e.currentTarget.value === "false") {
-              onChange(JSON.parse(e.currentTarget.value));
-              return;
-            }
-            onChange(e.currentTarget.value);
-          },
-          value,
-          children: field.options.map((option) => /* @__PURE__ */ (0, import_jsx_runtime16.jsx)(
-            "option",
-            {
-              label: option.label,
-              value: option.value
-            },
-            option.label + option.value
-          ))
+      id,
+      className: getClassName11("input"),
+      disabled: readOnly,
+      onChange: (e) => {
+        if (e.currentTarget.value === "true" || e.currentTarget.value === "false") {
+          onChange(JSON.parse(e.currentTarget.value));
+          return;
         }
-      )
+        onChange(e.currentTarget.value);
+      },
+      value,
+      children: field.options.map((option) => /* @__PURE__ */ (0, import_jsx_runtime16.jsx)(
+        "option",
+        {
+          label: option.label,
+          value: option.value
+        },
+        option.label + option.value
+      ))
     }
-  );
+  ) });
 };
 
 // components/AutoField/fields/TextareaField/index.tsx
@@ -30553,7 +30485,7 @@ var TextareaField = ({
   Label,
   id
 }) => {
-  return /* @__PURE__ */ (0, import_jsx_runtime17.jsx)(Label, { label: label || name, icon: /* @__PURE__ */ (0, import_jsx_runtime17.jsx)(Type, { size: 16 }), readOnly, children: /* @__PURE__ */ (0, import_jsx_runtime17.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime17.jsx)(Label, { label: label || name, readOnly, children: /* @__PURE__ */ (0, import_jsx_runtime17.jsx)(
     "textarea",
     {
       id,
@@ -30594,40 +30526,31 @@ var ObjectField = ({
   }
   const readOnlyFields = (selectedItem == null ? void 0 : selectedItem.readOnly) || {};
   const data = value || {};
-  return /* @__PURE__ */ (0, import_jsx_runtime18.jsx)(
-    Label,
-    {
-      label: label || name,
-      icon: /* @__PURE__ */ (0, import_jsx_runtime18.jsx)(MoreVertical, { size: 16 }),
-      el: "div",
-      readOnly,
-      children: /* @__PURE__ */ (0, import_jsx_runtime18.jsx)("div", { className: getClassName13(), children: /* @__PURE__ */ (0, import_jsx_runtime18.jsx)("fieldset", { className: getClassName13("fieldset"), children: Object.keys(field.objectFields).map((fieldName) => {
-        const subField = field.objectFields[fieldName];
-        const subFieldName = `${name}.${fieldName}`;
-        const wildcardFieldName = `${name}.${fieldName}`;
-        return /* @__PURE__ */ (0, import_jsx_runtime18.jsx)(
-          AutoFieldPrivate,
-          {
-            name: subFieldName,
-            label: subField.label || fieldName,
-            id: `${id}_${fieldName}`,
-            readOnly: typeof readOnlyFields[subFieldName] !== "undefined" ? readOnlyFields[subFieldName] : readOnlyFields[wildcardFieldName],
-            field: subField,
-            value: data[fieldName],
-            onChange: (val, ui) => {
-              onChange(
-                __spreadProps(__spreadValues({}, data), {
-                  [fieldName]: val
-                }),
-                ui
-              );
-            }
-          },
-          subFieldName
-        );
-      }) }) })
-    }
-  );
+  return /* @__PURE__ */ (0, import_jsx_runtime18.jsx)(Label, { label: label || name, el: "div", readOnly, children: /* @__PURE__ */ (0, import_jsx_runtime18.jsx)("div", { className: getClassName13(), children: /* @__PURE__ */ (0, import_jsx_runtime18.jsx)("fieldset", { className: getClassName13("fieldset"), children: Object.keys(field.objectFields).map((fieldName) => {
+    const subField = field.objectFields[fieldName];
+    const subFieldName = `${name}.${fieldName}`;
+    const wildcardFieldName = `${name}.${fieldName}`;
+    return /* @__PURE__ */ (0, import_jsx_runtime18.jsx)(
+      AutoFieldPrivate,
+      {
+        name: subFieldName,
+        label: subField.label || fieldName,
+        id: `${id}_${fieldName}`,
+        readOnly: typeof readOnlyFields[subFieldName] !== "undefined" ? readOnlyFields[subFieldName] : readOnlyFields[wildcardFieldName],
+        field: subField,
+        value: data[fieldName],
+        onChange: (val, ui) => {
+          onChange(
+            __spreadProps(__spreadValues({}, data), {
+              [fieldName]: val
+            }),
+            ui
+          );
+        }
+      },
+      subFieldName
+    );
+  }) }) }) });
 };
 
 // lib/use-safe-id.ts
@@ -30766,7 +30689,7 @@ function AutoField(props) {
 }
 
 // css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/Drawer/styles.module.css#css-module
-var styles_module_default9 = { "Drawer": "_Drawer_rik0t_1", "DrawerItem-default": "_DrawerItem-default_rik0t_5", "DrawerItem-draggableWrapper": "_DrawerItem-draggableWrapper_rik0t_5", "DrawerItem": "_DrawerItem_rik0t_5", "DrawerItem-draggable": "_DrawerItem-draggable_rik0t_5", "Drawer--isDraggingFrom": "_Drawer--isDraggingFrom_rik0t_31", "DrawerItem-name": "_DrawerItem-name_rik0t_47" };
+var styles_module_default9 = { "Drawer": "_Drawer_ta2yf_1", "DrawerItem-default": "_DrawerItem-default_ta2yf_5", "DrawerItem-draggableWrapper": "_DrawerItem-draggableWrapper_ta2yf_5", "DrawerItem": "_DrawerItem_ta2yf_5", "DrawerItem-draggable": "_DrawerItem-draggable_ta2yf_5", "Drawer--isDraggingFrom": "_Drawer--isDraggingFrom_ta2yf_35", "DrawerItem-name": "_DrawerItem-name_ta2yf_51" };
 
 // components/Drawer/index.tsx
 var import_react11 = require("react");
@@ -30806,8 +30729,8 @@ var DrawerItem = ({
     [children]
   );
   return /* @__PURE__ */ (0, import_jsx_runtime20.jsx)(DrawerDraggable, { id: resolvedId, index, children: /* @__PURE__ */ (0, import_jsx_runtime20.jsx)(CustomInner, { name, children: /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("div", { className: getClassNameItem2("draggableWrapper"), children: /* @__PURE__ */ (0, import_jsx_runtime20.jsxs)("div", { className: getClassNameItem2("draggable"), children: [
-    /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("div", { className: getClassNameItem2("name"), children: label != null ? label : name }),
-    /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("div", { className: getClassNameItem2("icon"), children: /* @__PURE__ */ (0, import_jsx_runtime20.jsx)(DragIcon, {}) })
+    /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("div", { className: getClassNameItem2("icon"), children: /* @__PURE__ */ (0, import_jsx_runtime20.jsx)(DragIcon, {}) }),
+    /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("div", { className: getClassNameItem2("name"), children: label != null ? label : name })
   ] }) }) }) });
 };
 var Drawer = ({
@@ -32220,7 +32143,7 @@ var DefaultFields = ({
   return /* @__PURE__ */ (0, import_jsx_runtime26.jsx)(import_jsx_runtime26.Fragment, { children });
 };
 var useResolvedFields = () => {
-  var _a;
+  var _a, _b;
   const { selectedItem, state, config } = useAppContext();
   const { data } = state;
   const rootFields = ((_a = config.root) == null ? void 0 : _a.fields) || defaultPageFields;
@@ -32236,7 +32159,7 @@ var useResolvedFields = () => {
   const componentData = selectedItem ? selectedItem : { props: rootProps, readOnly: data.root.readOnly };
   const resolveFields = (0, import_react19.useCallback)(
     (..._0) => __async(void 0, [..._0], function* (fields = {}) {
-      var _a2, _b, _c;
+      var _a2, _b2, _c;
       const lastData = ((_a2 = lastSelectedData.props) == null ? void 0 : _a2.id) === componentData.props.id ? lastSelectedData : {};
       const changed = getChanged(componentData, lastData);
       setLastSelectedData(componentData);
@@ -32252,7 +32175,7 @@ var useResolvedFields = () => {
           }
         );
       }
-      if (!selectedItem && ((_b = config.root) == null ? void 0 : _b.resolveFields)) {
+      if (!selectedItem && ((_b2 = config.root) == null ? void 0 : _b2.resolveFields)) {
         return yield (_c = config.root) == null ? void 0 : _c.resolveFields(componentData, {
           changed,
           fields,
@@ -32271,13 +32194,12 @@ var useResolvedFields = () => {
     [data, config, componentData, selectedItem, resolvedFields, state]
   );
   (0, import_react19.useEffect)(() => {
-    console.log(data, selectedItem, defaultFields);
     setFieldsLoading(true);
     resolveFields(defaultFields).then((fields) => {
       setResolvedFields(fields || {});
       setFieldsLoading(false);
     });
-  }, [data, defaultFields]);
+  }, [data, defaultFields, (_b = selectedItem == null ? void 0 : selectedItem.props) == null ? void 0 : _b.id]);
   return [resolvedFields, fieldsLoading];
 };
 var Fields = () => {
@@ -34206,14 +34128,6 @@ lucide-react/dist/esm/createLucideIcon.js:
    * See the LICENSE file in the root directory of this source tree.
    *)
 
-lucide-react/dist/esm/icons/check-circle.js:
-  (**
-   * @license lucide-react v0.298.0 - ISC
-   *
-   * This source code is licensed under the ISC license.
-   * See the LICENSE file in the root directory of this source tree.
-   *)
-
 lucide-react/dist/esm/icons/chevron-down.js:
   (**
    * @license lucide-react v0.298.0 - ISC
@@ -34254,14 +34168,6 @@ lucide-react/dist/esm/icons/globe.js:
    * See the LICENSE file in the root directory of this source tree.
    *)
 
-lucide-react/dist/esm/icons/hash.js:
-  (**
-   * @license lucide-react v0.298.0 - ISC
-   *
-   * This source code is licensed under the ISC license.
-   * See the LICENSE file in the root directory of this source tree.
-   *)
-
 lucide-react/dist/esm/icons/layers.js:
   (**
    * @license lucide-react v0.298.0 - ISC
@@ -34286,14 +34192,6 @@ lucide-react/dist/esm/icons/link.js:
    * See the LICENSE file in the root directory of this source tree.
    *)
 
-lucide-react/dist/esm/icons/list.js:
-  (**
-   * @license lucide-react v0.298.0 - ISC
-   *
-   * This source code is licensed under the ISC license.
-   * See the LICENSE file in the root directory of this source tree.
-   *)
-
 lucide-react/dist/esm/icons/lock.js:
   (**
    * @license lucide-react v0.298.0 - ISC
@@ -34303,14 +34201,6 @@ lucide-react/dist/esm/icons/lock.js:
    *)
 
 lucide-react/dist/esm/icons/monitor.js:
-  (**
-   * @license lucide-react v0.298.0 - ISC
-   *
-   * This source code is licensed under the ISC license.
-   * See the LICENSE file in the root directory of this source tree.
-   *)
-
-lucide-react/dist/esm/icons/more-vertical.js:
   (**
    * @license lucide-react v0.298.0 - ISC
    *

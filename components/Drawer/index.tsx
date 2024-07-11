@@ -70,10 +70,10 @@ const DrawerItem = ({
       <CustomInner name={name}>
         <div className={getClassNameItem("draggableWrapper")}>
           <div className={getClassNameItem("draggable")}>
-            <div className={getClassNameItem("name")}>{label ?? name}</div>
             <div className={getClassNameItem("icon")}>
               <DragIcon />
             </div>
+            <div className={getClassNameItem("name")}>{label ?? name}</div>
           </div>
         </div>
       </CustomInner>

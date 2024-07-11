@@ -1,5 +1,3 @@
-@import "https://rsms.me/inter/inter.css";
-
 /* styles/color.css */
 :root {
   --puck-color-rose-01: #4a001c;
@@ -137,44 +135,43 @@
 /* styles.css */
 
 /* css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/AutoField/styles.module.css/#css-module-data */
-._Input_1z0q0_1 {
+._Input_1mgx4_1 {
   color: var(--puck-color-grey-04);
   padding: 10px;
   display: block;
 }
-._Input_1z0q0_1 ._Input_1z0q0_1 {
+._Input_1mgx4_1 ._Input_1mgx4_1 {
   padding: 0px;
 }
-._Input_1z0q0_1 * {
+._Input_1mgx4_1 * {
   box-sizing: border-box;
 }
-._Input_1z0q0_1 + ._Input_1z0q0_1 {
+._Input_1mgx4_1 + ._Input_1mgx4_1 {
   border-top: 1px solid var(--puck-color-grey-09);
   margin-top: 8px;
 }
-._Input_1z0q0_1 ._Input_1z0q0_1 + ._Input_1z0q0_1 {
+._Input_1mgx4_1 ._Input_1mgx4_1 + ._Input_1mgx4_1 {
   border-top: 0px;
   margin-top: 12px;
 }
-._Input-label_1z0q0_25 {
+._Input-label_1mgx4_25 {
   align-items: center;
   color: var(--puck-color-grey-04);
   display: flex;
   padding-bottom: 12px;
-  font-size: var(--puck-font-size-xxs);
-  font-weight: 600;
+  font-size: 12px;
 }
-._Input-labelIcon_1z0q0_34 {
+._Input-labelIcon_1mgx4_33 {
   color: var(--puck-color-grey-07);
   display: flex;
   margin-right: 4px;
   padding-left: 4px;
 }
-._Input-disabledIcon_1z0q0_41 {
+._Input-disabledIcon_1mgx4_40 {
   color: var(--puck-color-grey-05);
   margin-left: auto;
 }
-._Input-input_1z0q0_46 {
+._Input-input_1mgx4_45 {
   background: var(--puck-color-white);
   border-width: 1px;
   border-style: solid;
@@ -185,8 +182,9 @@
   padding: 10px;
   transition: border-color 50ms ease-in;
   width: 100%;
+  font-size: 12px;
 }
-select._Input-input_1z0q0_46 {
+select._Input-input_1mgx4_45 {
   appearance: none;
   background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%23c3c3c3'><polygon points='0,0 100,0 50,50'/></svg>") no-repeat;
   background-size: 12px;
@@ -196,25 +194,25 @@ select._Input-input_1z0q0_46 {
   cursor: pointer;
 }
 @media (hover: hover) and (pointer: fine) {
-  ._Input_1z0q0_1:has(> input):hover ._Input-input_1z0q0_46:not([readonly]),
-  ._Input_1z0q0_1:has(> textarea):hover ._Input-input_1z0q0_46:not([readonly]) {
+  ._Input_1mgx4_1:has(> input):hover ._Input-input_1mgx4_45:not([readonly]),
+  ._Input_1mgx4_1:has(> textarea):hover ._Input-input_1mgx4_45:not([readonly]) {
     border-color: var(--puck-color-grey-05);
     transition: none;
   }
-  ._Input_1z0q0_1:has(> select):hover ._Input-input_1z0q0_46:not([disabled]) {
+  ._Input_1mgx4_1:has(> select):hover ._Input-input_1mgx4_45:not([disabled]) {
     background-color: var(--puck-color-azure-12);
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%235a5a5a'><polygon points='0,0 100,0 50,50'/></svg>");
     border-color: var(--puck-color-grey-05);
     transition: none;
   }
 }
-._Input-input_1z0q0_46:focus {
+._Input-input_1mgx4_45:focus {
   border-color: var(--puck-color-grey-05);
   outline: 2px solid var(--puck-color-azure-05);
   transition: none;
 }
-._Input--readOnly_1z0q0_90 > ._Input-input_1z0q0_46,
-._Input--readOnly_1z0q0_90 > select._Input-input_1z0q0_46 {
+._Input--readOnly_1mgx4_90 > ._Input-input_1mgx4_45,
+._Input--readOnly_1mgx4_90 > select._Input-input_1mgx4_45 {
   background-color: var(--puck-color-grey-11);
   border-color: var(--puck-color-grey-09);
   color: var(--puck-color-grey-04);
@@ -223,34 +221,34 @@ select._Input-input_1z0q0_46 {
   outline: 0;
   transition: none;
 }
-._Input-radioGroupItems_1z0q0_101 {
+._Input-radioGroupItems_1mgx4_101 {
   display: flex;
   border: 1px solid var(--puck-color-grey-09);
   border-radius: 4px;
   flex-wrap: wrap;
 }
-._Input-radio_1z0q0_101 {
+._Input-radio_1mgx4_101 {
   border-right: 1px solid var(--puck-color-grey-09);
   flex-grow: 1;
 }
-._Input-radio_1z0q0_101:first-of-type {
+._Input-radio_1mgx4_101:first-of-type {
   border-bottom-left-radius: 4px;
   border-top-left-radius: 4px;
 }
-._Input-radio_1z0q0_101:first-of-type ._Input-radioInner_1z0q0_118 {
+._Input-radio_1mgx4_101:first-of-type ._Input-radioInner_1mgx4_118 {
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
 }
-._Input-radio_1z0q0_101:last-of-type {
+._Input-radio_1mgx4_101:last-of-type {
   border-bottom-right-radius: 4px;
   border-right: 0;
   border-top-right-radius: 4px;
 }
-._Input-radio_1z0q0_101:last-of-type ._Input-radioInner_1z0q0_118 {
+._Input-radio_1mgx4_101:last-of-type ._Input-radioInner_1mgx4_118 {
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
 }
-._Input-radioInner_1z0q0_118 {
+._Input-radioInner_1mgx4_118 {
   background-color: var(--puck-color-white);
   color: var(--puck-color-grey-04);
   cursor: pointer;
@@ -259,32 +257,32 @@ select._Input-input_1z0q0_46 {
   text-align: center;
   transition: background-color 50ms ease-in;
 }
-._Input-radio_1z0q0_101:has(:focus-visible) {
+._Input-radio_1mgx4_101:has(:focus-visible) {
   outline: 2px solid var(--puck-color-azure-05);
   outline-offset: 2px;
   position: relative;
 }
 @media (hover: hover) and (pointer: fine) {
-  ._Input-radioInner_1z0q0_118:hover {
+  ._Input-radioInner_1mgx4_118:hover {
     background-color: var(--puck-color-azure-12);
     transition: none;
   }
 }
-._Input--readOnly_1z0q0_90 ._Input-radioInner_1z0q0_118 {
+._Input--readOnly_1mgx4_90 ._Input-radioInner_1mgx4_118 {
   background-color: var(--puck-color-white);
   color: var(--puck-color-grey-04);
   cursor: default;
 }
-._Input-radio_1z0q0_101 ._Input-radioInput_1z0q0_163:checked ~ ._Input-radioInner_1z0q0_118 {
+._Input-radio_1mgx4_101 ._Input-radioInput_1mgx4_163:checked ~ ._Input-radioInner_1mgx4_118 {
   background-color: var(--puck-color-azure-11);
   color: var(--puck-color-azure-04);
   font-weight: 500;
 }
-._Input--readOnly_1z0q0_90 ._Input-radioInput_1z0q0_163:checked ~ ._Input-radioInner_1z0q0_118 {
+._Input--readOnly_1mgx4_90 ._Input-radioInput_1mgx4_163:checked ~ ._Input-radioInner_1mgx4_118 {
   background-color: var(--puck-color-grey-11);
   color: var(--puck-color-grey-04);
 }
-._Input-radio_1z0q0_101 ._Input-radioInput_1z0q0_163 {
+._Input-radio_1mgx4_101 ._Input-radioInput_1mgx4_163 {
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
   height: 1px;
@@ -293,7 +291,7 @@ select._Input-input_1z0q0_46 {
   white-space: nowrap;
   width: 1px;
 }
-textarea._Input-input_1z0q0_46 {
+textarea._Input-input_1mgx4_45 {
   margin-bottom: -4px;
 }
 
@@ -988,43 +986,47 @@ textarea._Input-input_1z0q0_46 {
 }
 
 /* css-module:/Users/hnanh/Workspaces/vnm-puck-editor/components/Drawer/styles.module.css/#css-module-data */
-._Drawer_rik0t_1 {
+._Drawer_ta2yf_1 {
   font-family: var(--puck-font-family);
 }
-._DrawerItem-default_rik0t_5 ._DrawerItem-draggableWrapper_rik0t_5 {
+._DrawerItem-default_ta2yf_5 ._DrawerItem-draggableWrapper_ta2yf_5 {
   padding-bottom: 12px;
+  display: grid;
+  grid-template: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 10px;
 }
-._DrawerItem_rik0t_5:last-of-type ._DrawerItem-default_rik0t_5 ._DrawerItem-draggableWrapper_rik0t_5 {
+._DrawerItem_ta2yf_5:last-of-type ._DrawerItem-default_ta2yf_5 ._DrawerItem-draggableWrapper_ta2yf_5 {
   padding-bottom: 0;
 }
-._DrawerItem-draggable_rik0t_5 {
+._DrawerItem-draggable_ta2yf_5 {
   background: var(--puck-color-white);
   padding: 10px;
   display: flex;
   border: 1px var(--puck-color-grey-09) solid;
   border-radius: 4px;
-  font-size: var(--puck-font-size-xxs);
-  justify-content: space-between;
+  font-size: 12px;
   align-items: center;
   cursor: grab;
   transition: background-color 50ms ease-in, color 50ms ease-in;
 }
-._DrawerItem_rik0t_5:focus-visible {
+._DrawerItem_ta2yf_5:focus-visible {
   outline: 0;
 }
-._Drawer_rik0t_1:not(._Drawer--isDraggingFrom_rik0t_31) ._DrawerItem_rik0t_5:focus-visible ._DrawerItem-draggable_rik0t_5 {
+._Drawer_ta2yf_1:not(._Drawer--isDraggingFrom_ta2yf_35) ._DrawerItem_ta2yf_5:focus-visible ._DrawerItem-draggable_ta2yf_5 {
   border-radius: 4px;
   outline: 2px solid var(--puck-color-azure-05);
   outline-offset: 2px;
 }
 @media (hover: hover) and (pointer: fine) {
-  ._Drawer_rik0t_1:not(._Drawer--isDraggingFrom_rik0t_31) ._DrawerItem-draggable_rik0t_5:hover {
+  ._Drawer_ta2yf_1:not(._Drawer--isDraggingFrom_ta2yf_35) ._DrawerItem-draggable_ta2yf_5:hover {
     background-color: var(--puck-color-azure-12);
     color: var(--puck-color-azure-04);
     transition: none;
   }
 }
-._DrawerItem-name_rik0t_47 {
+._DrawerItem-name_ta2yf_51 {
   overflow-x: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
